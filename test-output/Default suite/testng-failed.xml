@@ -5,7 +5,7 @@
     <classes>
       <class name="MedDashborad.AdminPanelproducts">
         <methods>
-          <include name="ShowButton"/>
+          <include name="deletebutton"/>
           <include name="setuo"/>
           <include name="teardown"/>
         </methods>

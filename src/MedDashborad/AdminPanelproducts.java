@@ -1,6 +1,8 @@
 package MedDashborad;
 
 import java.lang.reflect.Method;
+import java.util.Iterator;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -45,6 +47,22 @@ public class AdminPanelproducts {
 		driver.quit();
 	}
 	
+	//Categories 
+	
+	@Test
+	public void AddNew()
+	{
+		driver.findElement(By.xpath("//span[text()='Products']")).click();
+		driver.findElement(By.xpath("//span[text()='Categories']")).click();
+		driver.findElement(By.xpath("//a[text()='Add New']")).click();
+		
+		
+	}
+	
+	
+	
+	
+	
 	
 	@Test(enabled=false)
 	public void ShowButton()
@@ -57,7 +75,7 @@ public class AdminPanelproducts {
 	
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void EditButton()
 	{
 		driver.findElement(By.xpath("//span[text()='Products']")).click();
@@ -65,8 +83,34 @@ public class AdminPanelproducts {
 		driver.findElement(By.xpath("//a[@title='Edit']")).click();
 		driver.findElement(By.id("title_en")).clear();
 		driver.findElement(By.id("title_en")).sendKeys("test");
+		driver.findElement(By.id("file")).sendKeys("C:\\Users\\ahmad\\OneDrive\\Desktop\\SmartCart Logo.png");
 		driver.findElement(By.xpath("//button[text()='Save']")).click();
 	}
 	
+	
+	@Test(enabled=false)
+	public void AddCategory()
+	{
+		driver.findElement(By.xpath("//span[text()='Products']")).click();
+		driver.findElement(By.xpath("//span[text()='Categories']")).click();
+		driver.findElement(By.xpath("//a[text()='Add New']")).click();
+		driver.findElement(By.id("title_en")).sendKeys("Category#1");
+		driver.findElement(By.id("title_ar")).sendKeys("Category#1");
+		driver.findElement(By.id("file")).sendKeys("C:\\Users\\ahmad\\Downloads\\Translated 05.jpeg");
+		driver.findElement(By.xpath("//button[text()='Save']")).click();
+	}
+	
+	@Test(enabled=false)
+	public void deletebutton()
+	{
+		driver.findElement(By.xpath("//span[text()='Products']")).click();
+		driver.findElement(By.xpath("//span[text()='Categories']")).click();
+		driver.findElement(By.xpath("//a[@title='Delete']")).click();
+		Set <String> id = driver.getWindowHandles();
+		Iterator<String> it = id.iterator();
+		String MoveTo = it.next();
+		driver.switchTo().window(MoveTo);
+		driver.findElement(By.xpath("//button[text()='Delete']")).click();
+	}
 
 }
