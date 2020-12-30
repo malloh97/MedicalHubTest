@@ -54,7 +54,7 @@ public class AdminPanelproducts {
 		driver.findElement(By.xpath("//a[@title='View']")).click();
 		boolean Actual = driver.findElement(By.id("title")).isDisplayed();
 		Assert.assertTrue(Actual);
-		System.out.println(Actual);
+	
 	}
 	
 	@Test
