@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-12-30T12:35:10 EET" name="Default suite" finished-at="2020-12-30T12:35:33 EET" duration-ms="23347">
+    <groups>
+    </groups>
+    <test started-at="2020-12-30T12:35:10 EET" name="Default test" finished-at="2020-12-30T12:35:33 EET" duration-ms="23347">
+      <class name="MedDashborad.AdminPanelproducts">
+        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelproducts@6b19b79]" started-at="2020-12-30T12:35:10 EET" name="setuo" finished-at="2020-12-30T12:35:23 EET" duration-ms="13575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelproducts.EditButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setuo -->
+        <test-method signature="EditButton()[pri:0, instance:MedDashborad.AdminPanelproducts@6b19b79]" started-at="2020-12-30T12:35:23 EET" name="EditButton" finished-at="2020-12-30T12:35:30 EET" duration-ms="6520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditButton -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:MedDashborad.AdminPanelproducts@6b19b79]" started-at="2020-12-30T12:35:30 EET" name="teardown" finished-at="2020-12-30T12:35:33 EET" duration-ms="3178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- MedDashborad.AdminPanelproducts -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
