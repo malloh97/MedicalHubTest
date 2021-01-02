@@ -13,9 +13,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+import com.relevantcodes.extentreports.model.ITest;
 
 import atu.testrecorder.ATUTestRecorder;
 import atu.testrecorder.exceptions.ATUTestRecorderException;
@@ -24,10 +32,31 @@ public class AdminPanelTender {
 	
 	WebDriver driver;
 	ATUTestRecorder recorder;
+	ExtentReports extent;
+	ExtentTest test; 
+	
+	@BeforeSuite
+	public void StartedTesting()
+	{
+		System.out.println("Lets Testing");
+		extent = new ExtentReports("D:\\Users\\ahmad\\eclipse-workspace\\Qiotic_Projects\\TestReport\\index.html", true);
+		extent.addSystemInfo("ProjectName", "Tender");
+		extent.addSystemInfo("OS", "windows");
+		extent.addSystemInfo("Tester", "Ahmad");
+		extent.addSystemInfo("TestingFramwork", "TestNG");
+	}
+	
+	@AfterSuite
+	public void FinishedTesting()
+	{
+		extent.flush();
+	}
+	
 	
 	@BeforeMethod
 	public void setuo(Method method) throws ATUTestRecorderException
 	{
+		test = extent.startTest(method.getName());
 		recorder = new ATUTestRecorder("D:\\Users\\ahmad\\eclipse-workspace\\Qiotic_Projects\\VideosRecorder",method.getName(),false);
 		recorder.start();
 		ChromeOptions option = new ChromeOptions();
@@ -43,9 +72,19 @@ public class AdminPanelTender {
 	}
 	
 	@AfterMethod
-	public void teardown() throws ATUTestRecorderException
+	public void teardown(ITestResult result) throws ATUTestRecorderException
 	{
 		recorder.stop();
+		if(result.getStatus() == ITestResult.SUCCESS)
+		{
+			test.log(LogStatus.PASS, "Test Pass");
+		}
+		else if(result.getStatus() == ITestResult.FAILURE)
+		{
+			test.log(LogStatus.FAIL,"Test Fail");
+		}
+		else
+			test.log(LogStatus.SKIP,"Test Skipped");
 		driver.quit();
 	}
 	

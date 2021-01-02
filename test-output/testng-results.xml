@@ -1,101 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-01T19:16:59 EET" name="Default suite" finished-at="2021-01-01T19:20:18 EET" duration-ms="198636">
+  <suite started-at="2021-01-02T19:28:42 EET" name="Default suite" finished-at="2021-01-02T19:31:50 EET" duration-ms="188597">
     <groups>
     </groups>
-    <test started-at="2021-01-01T19:16:59 EET" name="Default test" finished-at="2021-01-01T19:20:18 EET" duration-ms="198636">
+    <test started-at="2021-01-02T19:28:42 EET" name="Default test" finished-at="2021-01-02T19:31:50 EET" duration-ms="188597">
       <class name="MedDashborad.AdminPanelTender">
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:16:59 EET" name="setuo" finished-at="2021-01-01T19:17:14 EET" duration-ms="15320" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedDashborad.AdminPanelTender.DeleteButton()]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="StartedTesting()[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:28:41 EET" name="StartedTesting" finished-at="2021-01-02T19:28:42 EET" duration-ms="658" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setuo -->
-        <test-method signature="DeleteButton()[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:17:14 EET" name="DeleteButton" finished-at="2021-01-01T19:17:27 EET" duration-ms="12601" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//a[@title='Delete'])[2]"}
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-LPDGG0M', ip: '192.168.1.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\ahmad\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56216}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: c2d13281e711f1d59ed32b572f07e49a
-*** Element info: {Using=xpath, value=(//a[@title='Delete'])[2]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[@title='Delete'])[2]"}
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-LPDGG0M', ip: '192.168.1.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\ahmad\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56216}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: c2d13281e711f1d59ed32b572f07e49a
-*** Element info: {Using=xpath, value=(//a[@title='Delete'])[2]}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at MedDashborad.AdminPanelTender.DeleteButton(AdminPanelTender.java:148)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteButton -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:17:27 EET" name="teardown" finished-at="2021-01-01T19:17:30 EET" duration-ms="2776" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:17:30 EET" name="setuo" finished-at="2021-01-01T19:17:42 EET" duration-ms="11955" status="PASS">
+        </test-method> <!-- StartedTesting -->
+        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:28:42 EET" name="setuo" finished-at="2021-01-02T19:29:12 EET" duration-ms="30753" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,15 +22,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuo -->
-        <test-method signature="SearchTextBox()[pri:1, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:17:42 EET" name="SearchTextBox" finished-at="2021-01-01T19:17:45 EET" duration-ms="2971" status="PASS">
+        <test-method signature="SearchTextBox()[pri:1, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:12 EET" name="SearchTextBox" finished-at="2021-01-02T19:29:15 EET" duration-ms="2859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchTextBox -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:17:45 EET" name="teardown" finished-at="2021-01-01T19:17:47 EET" duration-ms="2827" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:15 EET" name="teardown" finished-at="2021-01-02T19:29:19 EET" duration-ms="3396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchTextBox status=SUCCESS method=AdminPanelTender.SearchTextBox()[pri:1, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:17:47 EET" name="setuo" finished-at="2021-01-01T19:18:00 EET" duration-ms="12401" status="PASS">
+        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:19 EET" name="setuo" finished-at="2021-01-02T19:29:32 EET" duration-ms="13030" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -125,15 +48,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuo -->
-        <test-method signature="ShowEntries()[pri:2, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:18:00 EET" name="ShowEntries" finished-at="2021-01-01T19:18:03 EET" duration-ms="3254" status="PASS">
+        <test-method signature="ShowEntries()[pri:2, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:32 EET" name="ShowEntries" finished-at="2021-01-02T19:29:35 EET" duration-ms="2897" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShowEntries -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:18:03 EET" name="teardown" finished-at="2021-01-01T19:18:06 EET" duration-ms="2809" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:35 EET" name="teardown" finished-at="2021-01-02T19:29:37 EET" duration-ms="2793" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ShowEntries status=SUCCESS method=AdminPanelTender.ShowEntries()[pri:2, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:18:06 EET" name="setuo" finished-at="2021-01-01T19:18:19 EET" duration-ms="13071" status="PASS">
+        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:37 EET" name="setuo" finished-at="2021-01-02T19:29:49 EET" duration-ms="11938" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -144,15 +74,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuo -->
-        <test-method signature="ShowButton()[pri:3, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:18:19 EET" name="ShowButton" finished-at="2021-01-01T19:18:23 EET" duration-ms="4119" status="PASS">
+        <test-method signature="ShowButton()[pri:3, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:49 EET" name="ShowButton" finished-at="2021-01-02T19:29:53 EET" duration-ms="3738" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShowButton -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:18:23 EET" name="teardown" finished-at="2021-01-01T19:18:26 EET" duration-ms="3252" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:53 EET" name="teardown" finished-at="2021-01-02T19:29:56 EET" duration-ms="3300" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ShowButton status=SUCCESS method=AdminPanelTender.ShowButton()[pri:3, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:18:26 EET" name="setuo" finished-at="2021-01-01T19:18:38 EET" duration-ms="11985" status="PASS">
+        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:56 EET" name="setuo" finished-at="2021-01-02T19:30:08 EET" duration-ms="11817" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -163,15 +100,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuo -->
-        <test-method signature="EditButton()[pri:4, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:18:38 EET" name="EditButton" finished-at="2021-01-01T19:18:45 EET" duration-ms="6337" status="PASS">
+        <test-method signature="EditButton()[pri:4, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:08 EET" name="EditButton" finished-at="2021-01-02T19:30:14 EET" duration-ms="5551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EditButton -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:18:45 EET" name="teardown" finished-at="2021-01-01T19:18:48 EET" duration-ms="2865" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:14 EET" name="teardown" finished-at="2021-01-02T19:30:17 EET" duration-ms="2818" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EditButton status=SUCCESS method=AdminPanelTender.EditButton()[pri:4, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:18:48 EET" name="setuo" finished-at="2021-01-01T19:19:00 EET" duration-ms="12566" status="PASS">
+        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:17 EET" name="setuo" finished-at="2021-01-02T19:30:28 EET" duration-ms="11407" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -182,15 +126,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuo -->
-        <test-method signature="DownloadPDF()[pri:5, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:19:00 EET" name="DownloadPDF" finished-at="2021-01-01T19:19:03 EET" duration-ms="3264" status="PASS">
+        <test-method signature="DownloadPDF()[pri:5, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:28 EET" name="DownloadPDF" finished-at="2021-01-02T19:30:31 EET" duration-ms="2703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DownloadPDF -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:19:03 EET" name="teardown" finished-at="2021-01-01T19:19:07 EET" duration-ms="3360" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:31 EET" name="teardown" finished-at="2021-01-02T19:30:34 EET" duration-ms="3294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DownloadPDF status=SUCCESS method=AdminPanelTender.DownloadPDF()[pri:5, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:19:07 EET" name="setuo" finished-at="2021-01-01T19:19:19 EET" duration-ms="12056" status="PASS">
+        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:34 EET" name="setuo" finished-at="2021-01-02T19:30:45 EET" duration-ms="10816" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -201,15 +152,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuo -->
-        <test-method signature="DownloadCSV()[pri:6, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:19:19 EET" name="DownloadCSV" finished-at="2021-01-01T19:19:22 EET" duration-ms="2803" status="PASS">
+        <test-method signature="DownloadCSV()[pri:6, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:45 EET" name="DownloadCSV" finished-at="2021-01-02T19:30:48 EET" duration-ms="3042" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DownloadCSV -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:19:22 EET" name="teardown" finished-at="2021-01-01T19:19:24 EET" duration-ms="2802" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:48 EET" name="teardown" finished-at="2021-01-02T19:30:51 EET" duration-ms="2854" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DownloadCSV status=SUCCESS method=AdminPanelTender.DownloadCSV()[pri:6, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:19:24 EET" name="setuo" finished-at="2021-01-01T19:19:36 EET" duration-ms="11875" status="PASS">
+        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:51 EET" name="setuo" finished-at="2021-01-02T19:31:03 EET" duration-ms="12205" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -220,15 +178,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuo -->
-        <test-method signature="DownloadExcel()[pri:7, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:19:36 EET" name="DownloadExcel" finished-at="2021-01-01T19:19:39 EET" duration-ms="3137" status="PASS">
+        <test-method signature="DownloadExcel()[pri:7, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:03 EET" name="DownloadExcel" finished-at="2021-01-02T19:31:06 EET" duration-ms="3112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DownloadExcel -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:19:39 EET" name="teardown" finished-at="2021-01-01T19:19:43 EET" duration-ms="4025" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:06 EET" name="teardown" finished-at="2021-01-02T19:31:09 EET" duration-ms="3073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DownloadExcel status=SUCCESS method=AdminPanelTender.DownloadExcel()[pri:7, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:19:43 EET" name="setuo" finished-at="2021-01-01T19:20:09 EET" duration-ms="25609" status="PASS">
+        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:09 EET" name="setuo" finished-at="2021-01-02T19:31:21 EET" duration-ms="11846" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -239,14 +204,51 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuo -->
-        <test-method signature="AddNewTender()[pri:8, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:20:09 EET" name="AddNewTender" finished-at="2021-01-01T19:20:15 EET" duration-ms="5648" status="PASS">
+        <test-method signature="AddNewTender()[pri:8, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:21 EET" name="AddNewTender" finished-at="2021-01-02T19:31:27 EET" duration-ms="6007" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddNewTender -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:MedDashborad.AdminPanelTender@5bfa9431]" started-at="2021-01-01T19:20:15 EET" name="teardown" finished-at="2021-01-01T19:20:18 EET" duration-ms="2842" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:27 EET" name="teardown" finished-at="2021-01-02T19:31:30 EET" duration-ms="2952" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddNewTender status=SUCCESS method=AdminPanelTender.AddNewTender()[pri:8, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:30 EET" name="setuo" finished-at="2021-01-02T19:31:43 EET" duration-ms="12677" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelTender.DeleteButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setuo -->
+        <test-method signature="DeleteButton()[pri:9, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:43 EET" name="DeleteButton" finished-at="2021-01-02T19:31:47 EET" duration-ms="4708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteButton -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:47 EET" name="teardown" finished-at="2021-01-02T19:31:50 EET" duration-ms="2887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DeleteButton status=SUCCESS method=AdminPanelTender.DeleteButton()[pri:9, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="FinishedTesting()[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:50 EET" name="FinishedTesting" finished-at="2021-01-02T19:31:51 EET" duration-ms="554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FinishedTesting -->
       </class> <!-- MedDashborad.AdminPanelTender -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

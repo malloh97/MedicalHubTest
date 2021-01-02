@@ -1,0 +1,314 @@
+{\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033\deflangfe1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\froman\fprq2\fcharset178 Times New Roman;}{\f2\fnil\fcharset0 Consolas;}{\f3\fmodern\fprq1\fcharset0 Consolas;}{\f4\fmodern\fprq1 Consolas;}{\f5\fnil Consolas;}}
+{\colortbl ;\red0\green0\blue0;\red106\green62\blue62;\red127\green0\blue85;\red0\green0\blue192;\red212\green212\blue212;\red232\green242\blue254;\red42\green0\blue255;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.18362}{\*\mmathPr\mdispDef1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\b\f0\fs28\lang9 *) Run selenuim on different Brwoser:\b0\fs22\par
+System.setproperty("key","value");\par
+WebDriver driver = new nameDriver();\par
+\par
+\par
+//key = webdriver.(name).driver\par
+//value = path for driver\par
+\par
+*) Selenuim Methods:\par
+\par
+- driver.get(name driver);   ( to open a browser ) \par
+- driver.getCurrenturl();    (to get a URL browser )\par
+- driver.getTitle();         (to get a title browser)\par
+- driver.getPageSource();    (to get a page source browser)\par
+- driver.navigate.back();    (to back)\par
+- driver.navigate.forward(); (to continuo)\par
+- driver.navigate.refresh(); (to refresh the page)\par
+- driver.manage().window().maximize();\par
+- driver.quit();             (to close all pages that opened by seleinum)\par
+- driver.close();            (to close the current page that opened by seleinum) \par
+\par
+\b\fs28 *) Selenuim Loactors:\b0\fs22\par
+- driver.findElement(By.name("value")).sendKeys("something you want send");\par
+- driver.findElement(By.id("value")).sendKeys("something you want send");\par
+- driver.findElement(By.className("value")).click();\par
+** if the class have a space the seleinum cant use that class.\par
+** some classes that have same value in this case selenuim started from (top left).\par
+\par
+- driver.findElement(By.linkText("value")).click();\par
+\par
+\par
+\b\fs28 *) Selenuim Xpath:\b0\fs22  ( used when we cant found attribut in the Element like id,name and class in this case we use Xpath)\par
+** Xpath syntax: //tag name[@attribute='value']\lang1033\par
+\lang9 - driver.findElement(By.xpath("//tag name[@attribute='value']")).sendKeys("value");\par
+\par
+* another syntax : //\f1\rtlch\lang1025 *\f0\ltrch\lang9 [@attribute='value']  (* mean that any tag in element work)\par
+\par
+** to ensure that the Xpath is correct we can use this code in console : $x("Xpath") then enter.\par
+\par
+** one of the onther ways to write xpath code is :\par
+- Xpath syntax: //tagname[contains(@attribut,'value')]\par
+- driver.findElement(By.xpath("//tag name[@contains(attribute,'value'))).sendKeys("value");\par
+\par
+- driver.findElement(By.xpath("//tag name[@attribute='value'][2]")).sendKeys("value");\par
+** this code means that you should choice the second element in the page. \par
+\par
+\par
+\b\fs28 *)\b0\fs22  \b\fs28 Selenuim CSS:\b0\fs22  ( the same use of the Xpath )\par
+** CSS syntax: tag name[attribute='value']\par
+- driver.findElement(By.cssSelector("tagname[attribute='value']")).sendKeys("value");\par
+\par
+** CSS syntax for ID : tag name#value or #value      (# mean ID)\par
+-  driver.findElement(By.cssSelector("tagname#value")).sendKeys("value");\par
+\par
+\par
+** CSS syntax for class name : tag name.value or .value  (. mean class)\par
+-  driver.findElement(By.cssSelector("tagname.value")).sendKeys("value");\par
+\par
+** to ensure that the CSS is correct we can use this code in console : $$("CSS") then enter.\par
+\par
+\b\fs28 *) Web Element: \b0\fs22 ( for loop // more than one test case )\par
+- syntax: WebElement NameVariable = value ;\par
+\par
+Ex:     WebElement EmailButton = driver.findElement(By.id("email"));\par
+        EmailButton.sendKeys("Ahmad"); \par
+\par
+\b\fs28 *) Drop down:\par
+1)\b0\fs22  \b\fs28 Static Drop down \b0\fs22 ( start with tag name "Select" ) \par
+- syntax: WebElement 1Name = driver.findElement(By.elementName("Value"));\par
+          Select 2Name = new Select(1Name);\par
+          2Name.selectByIndex(5);\par
+          2Name.selectByValue("15");\par
+\b\fs28 2) Dynamic Drop down \b0\fs22 ( start with any tag name Expact "Select")\par
+\par
+\b\fs28 *) Radio Buttons and Check Boxes:\par
+\b0\fs22 - WebElememt NameValue = driver.findElement(By.id("Value"));\par
+  NameValue.click();\par
+  System.out.printIn(NameValue.IsSelected());   (print true or false)\par
+\par
+** IsSelected();  (Its a bool method return true or false// if Radio Buttons selected return true if not false \par
+\par
+\par
+\b\fs28 *) WebElements : \b0\fs22 a list of elements that have the same Xpath.\par
+syntax :  List <WebElement> Name = driver.findElements(By.xpath("Xpath")); \tab\par
+\tab\tab Name.get(int).click();\par
+\par
+other way : driver.findElements(By.xpath("xpath")).get(int).click();\par
+\par
+\par
+** size(); to know how much elements that have the same xpath. \par
+syntax : driver.findElements(By.xpath("Xpath")).size();\par
+\par
+\b\fs28 *) JavaScript Alerts:\par
+\b0\fs22 - theres three types of alerts \par
+1) Alert Box: it have one button only (ok).\par
+2) confirm Box: it have two buttons (ok) and (cancle).\par
+3) Prompt Box: it have two buttons (ok) and (cancle) with inputtext.\par
+\par
+** we can deal with javascript alerts by method called switch();\par
+Ex: driver.findElement(By.xpath("//input[@value='prompt box']")).click();\par
+\tab\tab driver.switchTo().alert().sendKeys("Hi");\par
+\tab\tab driver.switchTo().alert().dismiss(); \par
+                driver.switchTo().alert().accept();\par
+ \par
+\b\fs28 *) isDisplayed(); Method:\par
+\b0\fs22 - we can use this method to ensure if button active (can use it) or not.\par
+- its return true or false (boolean).\par
+syntax: System.out.println(driver.findElement(By.id("flight-returning-flp")).isDisplayed());\par
+\par
+\b\fs28 *) Mouse Actions : \b0\fs22 ita a method allow us to make test causes easly by class calld "Actions".\par
+syntax:     WebElement Text = driver.findElement(By.id("value"));\par
+            Actions action = new Actions(driver);\par
+\tab     action.moveToElement(Text).click().sendKeys("ahmad").build().perform();\par
+\par
+** we can use keybord on selenium by keyDown or keyUp or sendkeys(keys.(shift, tab...)):\par
+- syntax:   WebElement Text = driver.findElement(By.id("value"));\par
+\tab     Actions action = new Actions(driver);\par
+\tab     action.moveToElement(Text).click().keyDown(Keys.SHIFT).sendKeys("ahmad").build().perform(); (to writ word in capital latter)\par
+            or \par
+            Text.sendkeys(keys.tab..);\par
+\par
+\b\fs28 *) Move to new window (Switch to):\b0\fs22 (How to Switch to a child Window?)\par
+- theres a method called windowhandled(); to give the id of the currnt window.\par
+- Iterator: its a tool that can move from the main page (parent) to another page (chaild).\par
+- SwitchTo(): to move from the parent page to the chaild page .\par
+- syntax:       Set <String> Handl = driver.getWindowHandles();\par
+\tab\tab Iterator <String> Id = Handl.iterator();\par
+\tab\tab String parent = Id.next();\par
+\tab\tab String chalid = Id.next();\par
+\tab\tab driver.switchTo().window(chalid);\par
+\par
+\b\fs28 *) Wait Method: \par
+\b0\fs22 theres three typies of Wait methods:\par
+1) Thread sleep.\par
+syntax: Thread.sleep(number);\par
+\par
+2) Implicitly Wait.\par
+syntax: driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);\par
+\par
+3)Explicit wait.\par
+\par
+syntax:\par
+        WebDriverWait wait = new WebDriverWait(driver,20);\par
+        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.name("value"))));\par
+\par
+Summary: \par
+          Thread sleep -->     Java       Static    \par
+          Implicitly Wait      Selenuim   dynamic    global\par
+          Explicit wait -->    Selenuim    dynamic    private\par
+          \par
+\b\fs28 *) Limiting Web Driver: \b0\fs22 to count links in some page.\par
+syntax: WebElement Links = driver.findElement(By.className("orb-footer-primary-links"));\par
+        System.out.println(Links.findElements(By.tagName("a")).size());\par
+\par
+\b\fs28 *) Switch to frame By Id, Name and Web Element:\par
+\b0\fs22 - if the page have frame we cant access to this frame without this method SwitchTo();\par
+** if the frame have id or name we can switch by frame(String).\par
+\par
+syntax:   WebElement frame = driver.findElement(By.xpath("//iframe[@id='a077aa5e']"));\par
+          driver.switchTo().frame(frame);\par
+          or\par
+          driver.switchTo().frame("id" or "name");\par
+\par
+** if the frame have no id or name we can switch by frame(String).\par
+\par
+\b\fs28 *) Switch to frame by index: \b0\fs22 (we use this way when we dont found id or name in frame)\par
+** we use this code to know the numbers of frame in pages:\par
+int count = (driver.findElements(By.tagName("iframe")).size());\par
+- if the number of frame = 1 then the frame = 0\par
+- if the number of frame > 1 then use for loop :(we use this code to know number of frame )\par
+\par
+                int count = (driver.findElements(By.tagName("iframe")).size());\par
+\tab\tab for (int i=0; i<count; i++)\par
+\tab\tab\{\par
+\tab\tab\tab driver.switchTo().frame(i);\par
+\tab\tab\tab int yes = driver.findElements(By.xpath("//img[@src='Jmeter720.png']")).size();\par
+\tab\tab\tab System.out.println(yes);\par
+\tab\tab\tab driver.switchTo().defaultContent();\par
+\tab\tab\}\par
+after we know the number of frame then we can start work.\tab\tab\par
+\par
+\b\fs28 *) ByAll, By Id Or Name:\par
+\b0\fs22 1) ByAll: to add one or more locators in the code.\par
+syntax: driver.findElement(new ByAll(By.id("gh-ac"), By.xpath("//input[@type='text']"))).sendKeys("Sport");\par
+\par
+2) ByIDorName: add email or id in the same code.\par
+syntax: driver.findElement(new ByIdOrName("gh-ac")).sendKeys("Hi");\par
+\par
+\b\fs28 *) Upload File by selenium:\par
+\b0\fs22\par
+driver.findElement(By.id("value")).sendKeys("copy the xpath of the file");\par
+\par
+*) send date to calender:\par
+\par
+- JavascriptExecutor jr = ((JavascriptExecutor) driver);\par
+  jr.executeScript("arguments[0].setAttribute('value' , '"+"14-11-2019"+"'), date");\par
+\par
+\b\fs28 *) Calender Hack:  \par
+\par
+\b0\f2\fs22 WebElement date = driver.findElement(By.\i id\i0 ("qf-0q-localised-check-in"));\par
+JavascriptExecutor js = ((JavascriptExecutor ) driver);\par
+js.executeScript("arguments[0].setAttribute('value','"+"2020/12/05"+"');", date);\par
+        \par
+\f0\par
+\b\fs28 *) ChromeOptions:\par
+- to solve the SSL certificates problem we use Options method.\par
+\b0\fs22\lang1033 Syntax: \par
+
+\pard\ltrpar\widctlpar\cf1\f3\fs20 ChromeOptions \cf2 option\cf1  = \cf3\b new\cf1\b0  ChromeOptions();\cf0\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf2 option\cf1 .setCapability(CapabilityType.\cf4\b\i ACCEPT_SSL_CERTS\cf1\b0\i0 , \cf3\b true\cf1\b0 );\par
+\cf0\f0\fs22\par
+\b\fs28 - to solve the \highlight5\f3 INSECURE \highlight0\f0\lang9 problem we use Options method.\par
+
+\pard\ltrpar\widctlpar\cf1\b0\f3\fs20\lang1033 ChromeOptions \cf2 option\cf1  = \cf3\b new\cf1\b0  ChromeOptions();\cf0\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf2\highlight6 option\cf1 .setCapability(CapabilityType.\cf4\highlight5\b\i ACCEPT_INSECURE_CERTS\cf1\highlight6\b0\i0 , \cf3\b true\cf1\b0 );\cf4\highlight5\b\i\fs22  \par
+\b0\i0\par
+\b\fs28 -\cf0\highlight0\f0  to add the private browser:\par
+\b0\fs22 Syntax:.\par
+
+\pard\ltrpar\widctlpar\cf1\f3\fs20 ChromeOptions \cf2 option\cf1  = \cf3\b new\cf1\b0  ChromeOptions();\cf0\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf2\highlight5 option\cf1\highlight6 .addArguments(\cf7 "--incognito"\cf1 );\par
+\par
+*) To find element by text:\par
+Syntax: \cf2 driver\cf1 .findElement(By.\highlight5 xpath(\f4\ldblquote\f3 //*[text()=\f4\rquote\f3 value\f4\rquote\f3 ]\f4\rdblquote\f3 ).click;\par
+\i Or \par
+\i0 Syntax: \cf2\highlight6 driver\cf1 .findElement(By.\highlight5 xpath(\f4\ldblquote\f3 //*[contains(text(),\f4\rquote\f3 value\f4\rquote\f3 )])\f4\rdblquote\f3 ).click;\par
+\par
+\highlight6 *) To get \highlight5 Attribute value:\par
+- we use this method getAttribute().\par
+
+\pard\ltrpar\widctlpar Syntax:\par
+\par
+\cf2\highlight0 driver\cf1 .findElement(By.\i linkText\i0 (\cf7 "value"\cf1 )).\highlight5 getAttribute\highlight0 (\cf7 "value"\cf1 );\par
+\par
+\par
+\b\fs32 Extent Report:\par
+\par
+
+\pard\ltrpar\cf0\b0\f2\fs20 ExtentReports\f5  extent; \par
+ExtentTest test;\cf1\b\f3\fs32\par
+-\cf0  \b0\i\f5\fs20 @BeforeSuite\i0\par
+\tab public void StartedTesting()\par
+\tab\{\par
+\tab\tab extent = new ExtentReports("D:\\\\Users\\\\ahmad\\\\eclipse-workspace                    {{\field{\*\fldinst{HYPERLINK "\\\\\\\\Qiotic_Projects\\\\\\\\TestReport\\\\\\\\index.html"}}{\fldrslt{\\\\Qiotic_Projects\\\\TestReport\\\\index.html\ul0\cf0}}}}\f5\fs20 ", true);\par
+\tab\tab extent.addSystemInfo("ProjectName", "MedicalHub");\par
+\tab\tab extent.addSystemInfo("OS", "Windows");\par
+\tab\tab extent.addSystemInfo("Tester","Ahmad");\par
+\tab\tab extent.addSystemInfo("TestFramwork", "TestNG");\par
+\tab\}\par
+\tab\par
+\f2    \i\f5 @AfterSuite\i0\par
+\tab public void FinishedTesing()\par
+\tab\{\par
+\tab\tab extent.flush();\par
+
+\pard\ltrpar\widctlpar\tab\}\par
+\f2  \f5\par
+
+\pard\ltrpar\i\f2   @BeforeMethod\i0\f5\par
+\tab public void setuo(Method method) throws ATUTestRecorderException\par
+\tab\{\par
+
+\pard\ltrpar\widctlpar\tab\tab test = extent.startTest(method.getName());\par
+\f2        \}\f3\par
+
+\pard\ltrpar  \f5\par
+\i @AfterMethod\i0\par
+\tab public void teardown(ITestResult result) throws \f2   \f5 ATUTestRecorderException\par
+\tab\{\par
+\tab\tab\par
+\tab\tab recorder.stop();\par
+\tab\tab if (result.getStatus() == ITestResult.\b\i SUCCESS\b0\i0 )\par
+\tab\tab\{\par
+\tab\tab\tab test.log(\i LogStatus\i0 .\b\i PASS\b0\i0 , "Test Pass");\par
+\tab\tab\} \par
+\tab\tab else if (result.getStatus() == ITestResult.\b\i FAILURE\b0\i0 )\par
+\tab\tab\{\par
+\tab\tab\tab test.log(\i LogStatus\i0 .\b\i FAIL\b0\i0 , "Test Fail");\par
+\tab\tab\}\par
+\tab\tab else \par
+\tab\tab\tab test.log(\i LogStatus\i0 .\b\i SKIP\b0\i0 , "Test Skipped");\par
+\tab\tab\par
+\tab\tab driver.quit();\par
+\tab\}\par
+\tab\par
+
+\pard\ltrpar\widctlpar\tab\f3\par
+\par
+\par
+\par
+\par
+\par
+\par
+\cf1\par
+\par
+\b\fs28 Eng. Hatem Collections: \par
+\b0\fs20\par
+{\cf0{\field{\*\fldinst{HYPERLINK https://github.com/hat2003/Hatem_Selenium-Collections }}{\fldrslt{https://github.com/hat2003/Hatem_Selenium-Collections\ul0\cf0}}}}\f3\fs20\par
+\cf0\par
+\cf1\tab\tab\cf0\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf1\highlight6\par
+\par
+\par
+\par
+\cf0\highlight0\f0\fs22\lang9\par
+}
+ 
