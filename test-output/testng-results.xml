@@ -1,255 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="8" total="9" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-02T19:28:42 EET" name="Default suite" finished-at="2021-01-02T19:31:50 EET" duration-ms="188597">
+  <suite started-at="2021-01-03T15:26:20 EET" name="Default suite" finished-at="2021-01-03T15:26:58 EET" duration-ms="38103">
     <groups>
     </groups>
-    <test started-at="2021-01-02T19:28:42 EET" name="Default test" finished-at="2021-01-02T19:31:50 EET" duration-ms="188597">
-      <class name="MedDashborad.AdminPanelTender">
-        <test-method is-config="true" signature="StartedTesting()[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:28:41 EET" name="StartedTesting" finished-at="2021-01-02T19:28:42 EET" duration-ms="658" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StartedTesting -->
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:28:42 EET" name="setuo" finished-at="2021-01-02T19:29:12 EET" duration-ms="30753" status="PASS">
+    <test started-at="2021-01-03T15:26:20 EET" name="Default test" finished-at="2021-01-03T15:26:58 EET" duration-ms="38103">
+      <class name="MedDashborad.AdminPanelNews">
+        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelNews@11a9e7c8]" started-at="2021-01-03T15:26:20 EET" name="setuo" finished-at="2021-01-03T15:26:50 EET" duration-ms="30260" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelTender.SearchTextBox()]]>
+                <![CDATA[public void MedDashborad.AdminPanelNews.DeleteButton()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuo -->
-        <test-method signature="SearchTextBox()[pri:1, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:12 EET" name="SearchTextBox" finished-at="2021-01-02T19:29:15 EET" duration-ms="2859" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchTextBox -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:15 EET" name="teardown" finished-at="2021-01-02T19:29:19 EET" duration-ms="3396" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SearchTextBox status=SUCCESS method=AdminPanelTender.SearchTextBox()[pri:1, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:19 EET" name="setuo" finished-at="2021-01-02T19:29:32 EET" duration-ms="13030" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedDashborad.AdminPanelTender.ShowEntries()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setuo -->
-        <test-method signature="ShowEntries()[pri:2, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:32 EET" name="ShowEntries" finished-at="2021-01-02T19:29:35 EET" duration-ms="2897" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ShowEntries -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:35 EET" name="teardown" finished-at="2021-01-02T19:29:37 EET" duration-ms="2793" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ShowEntries status=SUCCESS method=AdminPanelTender.ShowEntries()[pri:2, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:37 EET" name="setuo" finished-at="2021-01-02T19:29:49 EET" duration-ms="11938" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedDashborad.AdminPanelTender.ShowButton()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setuo -->
-        <test-method signature="ShowButton()[pri:3, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:49 EET" name="ShowButton" finished-at="2021-01-02T19:29:53 EET" duration-ms="3738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ShowButton -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:53 EET" name="teardown" finished-at="2021-01-02T19:29:56 EET" duration-ms="3300" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ShowButton status=SUCCESS method=AdminPanelTender.ShowButton()[pri:3, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:29:56 EET" name="setuo" finished-at="2021-01-02T19:30:08 EET" duration-ms="11817" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedDashborad.AdminPanelTender.EditButton()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setuo -->
-        <test-method signature="EditButton()[pri:4, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:08 EET" name="EditButton" finished-at="2021-01-02T19:30:14 EET" duration-ms="5551" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditButton -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:14 EET" name="teardown" finished-at="2021-01-02T19:30:17 EET" duration-ms="2818" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EditButton status=SUCCESS method=AdminPanelTender.EditButton()[pri:4, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:17 EET" name="setuo" finished-at="2021-01-02T19:30:28 EET" duration-ms="11407" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedDashborad.AdminPanelTender.DownloadPDF()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setuo -->
-        <test-method signature="DownloadPDF()[pri:5, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:28 EET" name="DownloadPDF" finished-at="2021-01-02T19:30:31 EET" duration-ms="2703" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DownloadPDF -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:31 EET" name="teardown" finished-at="2021-01-02T19:30:34 EET" duration-ms="3294" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=DownloadPDF status=SUCCESS method=AdminPanelTender.DownloadPDF()[pri:5, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:34 EET" name="setuo" finished-at="2021-01-02T19:30:45 EET" duration-ms="10816" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedDashborad.AdminPanelTender.DownloadCSV()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setuo -->
-        <test-method signature="DownloadCSV()[pri:6, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:45 EET" name="DownloadCSV" finished-at="2021-01-02T19:30:48 EET" duration-ms="3042" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DownloadCSV -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:48 EET" name="teardown" finished-at="2021-01-02T19:30:51 EET" duration-ms="2854" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=DownloadCSV status=SUCCESS method=AdminPanelTender.DownloadCSV()[pri:6, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:30:51 EET" name="setuo" finished-at="2021-01-02T19:31:03 EET" duration-ms="12205" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedDashborad.AdminPanelTender.DownloadExcel()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setuo -->
-        <test-method signature="DownloadExcel()[pri:7, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:03 EET" name="DownloadExcel" finished-at="2021-01-02T19:31:06 EET" duration-ms="3112" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DownloadExcel -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:06 EET" name="teardown" finished-at="2021-01-02T19:31:09 EET" duration-ms="3073" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=DownloadExcel status=SUCCESS method=AdminPanelTender.DownloadExcel()[pri:7, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:09 EET" name="setuo" finished-at="2021-01-02T19:31:21 EET" duration-ms="11846" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedDashborad.AdminPanelTender.AddNewTender()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setuo -->
-        <test-method signature="AddNewTender()[pri:8, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:21 EET" name="AddNewTender" finished-at="2021-01-02T19:31:27 EET" duration-ms="6007" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddNewTender -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:27 EET" name="teardown" finished-at="2021-01-02T19:31:30 EET" duration-ms="2952" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AddNewTender status=SUCCESS method=AdminPanelTender.AddNewTender()[pri:8, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:30 EET" name="setuo" finished-at="2021-01-02T19:31:43 EET" duration-ms="12677" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedDashborad.AdminPanelTender.DeleteButton()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setuo -->
-        <test-method signature="DeleteButton()[pri:9, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:43 EET" name="DeleteButton" finished-at="2021-01-02T19:31:47 EET" duration-ms="4708" status="PASS">
+        <test-method signature="DeleteButton()[pri:9, instance:MedDashborad.AdminPanelNews@11a9e7c8]" started-at="2021-01-03T15:26:50 EET" name="DeleteButton" finished-at="2021-01-03T15:26:55 EET" duration-ms="4702" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteButton -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:47 EET" name="teardown" finished-at="2021-01-02T19:31:50 EET" duration-ms="2887" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelNews@11a9e7c8]" started-at="2021-01-03T15:26:55 EET" name="teardown" finished-at="2021-01-03T15:26:58 EET" duration-ms="3081" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DeleteButton status=SUCCESS method=AdminPanelTender.DeleteButton()[pri:9, instance:MedDashborad.AdminPanelTender@4c1d9d4b] output={null}]]]>
+                <![CDATA[[TestResult name=DeleteButton status=SUCCESS method=AdminPanelNews.DeleteButton()[pri:9, instance:MedDashborad.AdminPanelNews@11a9e7c8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="FinishedTesting()[pri:0, instance:MedDashborad.AdminPanelTender@4c1d9d4b]" started-at="2021-01-02T19:31:50 EET" name="FinishedTesting" finished-at="2021-01-02T19:31:51 EET" duration-ms="554" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FinishedTesting -->
-      </class> <!-- MedDashborad.AdminPanelTender -->
+      </class> <!-- MedDashborad.AdminPanelNews -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

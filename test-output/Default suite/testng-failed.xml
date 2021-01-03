@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MedDashborad.AdminPanelTender">
+      <class name="MedDashborad.AdminPanelNews">
         <methods>
-          <include name="setuo"/>
+          <include name="AddBlog"/>
           <include name="teardown"/>
-          <include name="DeleteButton"/>
+          <include name="setuo"/>
         </methods>
-      </class> <!-- MedDashborad.AdminPanelTender -->
+      </class> <!-- MedDashborad.AdminPanelNews -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
