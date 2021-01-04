@@ -1,14 +1,14 @@
 package MedDashborad;
 
 import java.lang.reflect.Method;
+import java.util.Iterator;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -73,7 +73,7 @@ public class AdminPanelOurPartners extends TestBase {
 		driver.quit();
 	}
 	
-	@Test(priority=1)
+	@Test(priority=10)
 	public void ShowEntiersOurPartners()
 	{
 		driver.findElement(By.xpath("//span[text()='Our Partners']")).click();
@@ -83,7 +83,7 @@ public class AdminPanelOurPartners extends TestBase {
 	}
 	
 
-	@Test(priority=2) 
+	@Test(priority=11) 
 	public void SearchTextBoxOurPartners()
 	{
 		driver.findElement(By.xpath("//span[text()='Our Partners']")).click();
@@ -91,6 +91,69 @@ public class AdminPanelOurPartners extends TestBase {
 		search.sendKeys("4");
 	}
 	
+	@Test(priority=12) 
+	public void ShowButtonOurPartners()
+	{
+		driver.findElement(By.xpath("//span[text()='Our Partners']")).click();
+		driver.findElement(By.xpath("//a[@title='View']")).click();
+	}
+	
+	@Test(priority=13)
+	public void EditButtonOurPartners()
+	{
+		driver.findElement(By.xpath("//span[text()='Our Partners']")).click();
+		driver.findElement(By.xpath("//a[@title='Edit']")).click();
+		driver.findElement(By.id("file")).sendKeys("C:\\Users\\ahmad\\Downloads\\Translated 08.jpeg");
+		driver.findElement(By.xpath("//button[text()='Save']")).click();
+	}
+
+
+	@Test(priority=14)
+	public void DownloadPDFOurPartners()
+	{
+		driver.findElement(By.xpath("//span[text()='Our Partners']")).click();
+		driver.findElement(By.xpath("//span[text()='Excel']")).click();
+	}
+	
+	@Test(priority=15)
+	public void DownloadCSVOurPartners()
+	{
+		driver.findElement(By.xpath("//span[text()='Our Partners']")).click();
+		driver.findElement(By.xpath("//span[text()='CSV']")).click();
+	}
+	
+    @Test(priority=16)
+	public void DownloadExcelOurPartners()
+	{
+		driver.findElement(By.xpath("//span[text()='Our Partners']")).click();
+		driver.findElement(By.xpath("//span[text()='Excel']")).click();
+	}
+    
+    @Test(priority=17)
+	public void AddOurPartners()
+	{
+		driver.findElement(By.xpath("//span[text()='Our Partners']")).click();
+		driver.findElement(By.xpath("//a[text()='Add New']")).click();
+		driver.findElement(By.id("file")).sendKeys("C:\\Users\\ahmad\\Downloads\\Translated 04.jpeg");
+		driver.findElement(By.xpath("//button[text()='Save']")).click();
+	}
+
+
+	@Test(priority=18) 
+	public void DeleteButtonOurPartners()
+	{
+		driver.findElement(By.xpath("//span[text()='Our Partners']")).click();
+		driver.findElement(By.xpath("(//a[@title='Delete'])[2]")).click();
+		Set<String> id = driver.getWindowHandles();
+		Iterator<String> it = id.iterator();
+		String MoveTo = it.next();
+		driver.switchTo().window(MoveTo);
+		driver.findElement(By.xpath("//button[text()='Delete']")).click();
+	}
+	
+	
+	
+
 
 
 

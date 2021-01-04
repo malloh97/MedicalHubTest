@@ -6,8 +6,9 @@
  </listeners>
   <test thread-count="5" name="Automation Test">
     <classes>
-      <class name="MedHubProject.HomePage"></class>
-      <class name="MedHubProject.LogInPage"></class>
-    </classes>
+       <class name="MedDashborad.TestBase"></class>
+       <class name="MedDashborad.AdminPanelOurPartners"></class>
+       <class name="MedDashborad.AdminPanelCMSPages"></class>
+       </classes>
   </test> <!-- Automation Test -->
 </suite> <!-- Qiotic Projects -->

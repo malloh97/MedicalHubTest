@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="18" passed="17" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-04T12:38:10 EET" name="Default suite" finished-at="2021-01-04T12:39:10 EET" duration-ms="60696">
+  <suite started-at="2021-01-04T21:55:00 EET" name="Qiotic Projects" finished-at="2021-01-04T22:04:12 EET" duration-ms="552336">
     <groups>
     </groups>
-    <test started-at="2021-01-04T12:38:10 EET" name="Default test" finished-at="2021-01-04T12:39:10 EET" duration-ms="60696">
+    <test started-at="2021-01-04T21:55:00 EET" name="Automation Test" finished-at="2021-01-04T22:04:12 EET" duration-ms="552336">
       <class name="MedDashborad.AdminPanelOurPartners">
-        <test-method is-config="true" signature="StartedTesting()[pri:0, instance:MedDashborad.AdminPanelOurPartners@222114ba]" started-at="2021-01-04T12:38:09 EET" name="StartedTesting" finished-at="2021-01-04T12:38:10 EET" duration-ms="284" status="PASS">
+        <test-method is-config="true" signature="StartedTesting()[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:55:00 EET" name="StartedTesting" finished-at="2021-01-04T21:55:00 EET" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartedTesting -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@222114ba]" started-at="2021-01-04T12:38:10 EET" name="setup" finished-at="2021-01-04T12:38:38 EET" duration-ms="28114" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:55:00 EET" name="setup" finished-at="2021-01-04T21:55:37 EET" duration-ms="36915" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="ShowEntiersOurPartners()[pri:1, instance:MedDashborad.AdminPanelOurPartners@222114ba]" started-at="2021-01-04T12:38:38 EET" name="ShowEntiersOurPartners" finished-at="2021-01-04T12:38:41 EET" duration-ms="3325" status="PASS">
+        <test-method signature="ShowEntiersOurPartners()[pri:10, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:55:37 EET" name="ShowEntiersOurPartners" finished-at="2021-01-04T21:55:46 EET" duration-ms="9306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShowEntiersOurPartners -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@222114ba]" started-at="2021-01-04T12:38:41 EET" name="teardown" finished-at="2021-01-04T12:38:45 EET" duration-ms="3511" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:55:46 EET" name="teardown" finished-at="2021-01-04T21:55:49 EET" duration-ms="3122" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ShowEntiersOurPartners status=SUCCESS method=AdminPanelOurPartners.ShowEntiersOurPartners()[pri:1, instance:MedDashborad.AdminPanelOurPartners@222114ba] output={null}]]]>
+                <![CDATA[[TestResult name=ShowEntiersOurPartners status=SUCCESS method=AdminPanelOurPartners.ShowEntiersOurPartners()[pri:10, instance:MedDashborad.AdminPanelOurPartners@61dd025] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -42,7 +42,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@222114ba]" started-at="2021-01-04T12:38:45 EET" name="setup" finished-at="2021-01-04T12:39:04 EET" duration-ms="19376" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:55:49 EET" name="setup" finished-at="2021-01-04T21:56:14 EET" duration-ms="24532" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,15 +53,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="SearchTextBoxOurPartners()[pri:2, instance:MedDashborad.AdminPanelOurPartners@222114ba]" started-at="2021-01-04T12:39:04 EET" name="SearchTextBoxOurPartners" finished-at="2021-01-04T12:39:07 EET" duration-ms="2887" status="PASS">
+        <test-method signature="SearchTextBoxOurPartners()[pri:11, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:56:14 EET" name="SearchTextBoxOurPartners" finished-at="2021-01-04T21:56:20 EET" duration-ms="5875" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchTextBoxOurPartners -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@222114ba]" started-at="2021-01-04T12:39:07 EET" name="teardown" finished-at="2021-01-04T12:39:10 EET" duration-ms="3303" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:56:20 EET" name="teardown" finished-at="2021-01-04T21:56:23 EET" duration-ms="3536" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SearchTextBoxOurPartners status=SUCCESS method=AdminPanelOurPartners.SearchTextBoxOurPartners()[pri:2, instance:MedDashborad.AdminPanelOurPartners@222114ba] output={null}]]]>
+                <![CDATA[[TestResult name=SearchTextBoxOurPartners status=SUCCESS method=AdminPanelOurPartners.SearchTextBoxOurPartners()[pri:11, instance:MedDashborad.AdminPanelOurPartners@61dd025] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -73,11 +73,586 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="FinishedTesting()[pri:0, instance:MedDashborad.AdminPanelOurPartners@222114ba]" started-at="2021-01-04T12:39:11 EET" name="FinishedTesting" finished-at="2021-01-04T12:39:12 EET" duration-ms="1285" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:56:23 EET" name="setup" finished-at="2021-01-04T21:57:45 EET" duration-ms="82263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.ShowButtonOurPartners()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ShowButtonOurPartners()[pri:12, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:57:45 EET" name="ShowButtonOurPartners" finished-at="2021-01-04T21:57:56 EET" duration-ms="10746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ShowButtonOurPartners -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:57:56 EET" name="teardown" finished-at="2021-01-04T21:58:00 EET" duration-ms="3622" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ShowButtonOurPartners status=SUCCESS method=AdminPanelOurPartners.ShowButtonOurPartners()[pri:12, instance:MedDashborad.AdminPanelOurPartners@61dd025] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.ShowButtonOurPartners()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:58:00 EET" name="setup" finished-at="2021-01-04T21:58:51 EET" duration-ms="51582" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.EditButtonOurPartners()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="EditButtonOurPartners()[pri:13, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:58:51 EET" name="EditButtonOurPartners" finished-at="2021-01-04T21:58:58 EET" duration-ms="6437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditButtonOurPartners -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:58:58 EET" name="teardown" finished-at="2021-01-04T21:59:01 EET" duration-ms="3522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EditButtonOurPartners status=SUCCESS method=AdminPanelOurPartners.EditButtonOurPartners()[pri:13, instance:MedDashborad.AdminPanelOurPartners@61dd025] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.EditButtonOurPartners()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:59:01 EET" name="setup" finished-at="2021-01-04T21:59:17 EET" duration-ms="15347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.DownloadPDFOurPartners()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DownloadPDFOurPartners()[pri:14, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:59:17 EET" name="DownloadPDFOurPartners" finished-at="2021-01-04T21:59:20 EET" duration-ms="3134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DownloadPDFOurPartners -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:59:20 EET" name="teardown" finished-at="2021-01-04T21:59:24 EET" duration-ms="3864" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DownloadPDFOurPartners status=SUCCESS method=AdminPanelOurPartners.DownloadPDFOurPartners()[pri:14, instance:MedDashborad.AdminPanelOurPartners@61dd025] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.DownloadPDFOurPartners()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:59:24 EET" name="setup" finished-at="2021-01-04T21:59:40 EET" duration-ms="16509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.DownloadCSVOurPartners()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DownloadCSVOurPartners()[pri:15, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:59:40 EET" name="DownloadCSVOurPartners" finished-at="2021-01-04T21:59:43 EET" duration-ms="2987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DownloadCSVOurPartners -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:59:43 EET" name="teardown" finished-at="2021-01-04T21:59:47 EET" duration-ms="3434" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DownloadCSVOurPartners status=SUCCESS method=AdminPanelOurPartners.DownloadCSVOurPartners()[pri:15, instance:MedDashborad.AdminPanelOurPartners@61dd025] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.DownloadCSVOurPartners()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:59:47 EET" name="setup" finished-at="2021-01-04T21:59:58 EET" duration-ms="11472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.DownloadExcelOurPartners()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DownloadExcelOurPartners()[pri:16, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T21:59:58 EET" name="DownloadExcelOurPartners" finished-at="2021-01-04T22:00:01 EET" duration-ms="2506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DownloadExcelOurPartners -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T22:00:01 EET" name="teardown" finished-at="2021-01-04T22:00:05 EET" duration-ms="4184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DownloadExcelOurPartners status=SUCCESS method=AdminPanelOurPartners.DownloadExcelOurPartners()[pri:16, instance:MedDashborad.AdminPanelOurPartners@61dd025] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.DownloadExcelOurPartners()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T22:00:05 EET" name="setup" finished-at="2021-01-04T22:00:21 EET" duration-ms="16432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.AddOurPartners()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AddOurPartners()[pri:17, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T22:00:21 EET" name="AddOurPartners" finished-at="2021-01-04T22:00:28 EET" duration-ms="6412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddOurPartners -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T22:00:28 EET" name="teardown" finished-at="2021-01-04T22:00:31 EET" duration-ms="2913" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddOurPartners status=SUCCESS method=AdminPanelOurPartners.AddOurPartners()[pri:17, instance:MedDashborad.AdminPanelOurPartners@61dd025] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.AddOurPartners()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T22:00:31 EET" name="setup" finished-at="2021-01-04T22:00:44 EET" duration-ms="13844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.DeleteButtonOurPartners()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DeleteButtonOurPartners()[pri:18, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T22:00:44 EET" name="DeleteButtonOurPartners" finished-at="2021-01-04T22:00:50 EET" duration-ms="5960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteButtonOurPartners -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T22:00:50 EET" name="teardown" finished-at="2021-01-04T22:00:54 EET" duration-ms="3134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DeleteButtonOurPartners status=SUCCESS method=AdminPanelOurPartners.DeleteButtonOurPartners()[pri:18, instance:MedDashborad.AdminPanelOurPartners@61dd025] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.DeleteButtonOurPartners()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="FinishedTesting()[pri:0, instance:MedDashborad.AdminPanelOurPartners@61dd025]" started-at="2021-01-04T22:04:13 EET" name="FinishedTesting" finished-at="2021-01-04T22:04:14 EET" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FinishedTesting -->
       </class> <!-- MedDashborad.AdminPanelOurPartners -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="MedDashborad.AdminPanelCMSPages">
+        <test-method is-config="true" signature="StartedTesting()[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T21:54:59 EET" name="StartedTesting" finished-at="2021-01-04T21:55:00 EET" duration-ms="364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartedTesting -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:00:54 EET" name="setup" finished-at="2021-01-04T22:01:06 EET" duration-ms="12414" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.ShowEntiersCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ShowEntiersCMSPages()[pri:1, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:01:06 EET" name="ShowEntiersCMSPages" finished-at="2021-01-04T22:01:09 EET" duration-ms="2309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ShowEntiersCMSPages -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:01:09 EET" name="teardown" finished-at="2021-01-04T22:01:12 EET" duration-ms="3026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ShowEntiersCMSPages status=SUCCESS method=AdminPanelCMSPages.ShowEntiersCMSPages()[pri:1, instance:MedDashborad.AdminPanelCMSPages@124c278f] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.ShowEntiersCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:01:12 EET" name="setup" finished-at="2021-01-04T22:01:24 EET" duration-ms="12247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.SearchTextBoxCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SearchTextBoxCMSPages()[pri:2, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:01:24 EET" name="SearchTextBoxCMSPages" finished-at="2021-01-04T22:01:27 EET" duration-ms="3055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchTextBoxCMSPages -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:01:27 EET" name="teardown" finished-at="2021-01-04T22:01:30 EET" duration-ms="3433" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchTextBoxCMSPages status=SUCCESS method=AdminPanelCMSPages.SearchTextBoxCMSPages()[pri:2, instance:MedDashborad.AdminPanelCMSPages@124c278f] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.SearchTextBoxCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:01:30 EET" name="setup" finished-at="2021-01-04T22:01:48 EET" duration-ms="17311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.ShowButtonCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ShowButtonCMSPages()[pri:3, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:01:48 EET" name="ShowButtonCMSPages" finished-at="2021-01-04T22:02:03 EET" duration-ms="15621" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='CMS Page #1']"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-LPDGG0M', ip: '192.168.1.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\ahmad\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62430}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b8780b21dcec2624c430bbaa08750521
+*** Element info: {Using=xpath, value=//input[@value='CMS Page #1']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='CMS Page #1']"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-LPDGG0M', ip: '192.168.1.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\ahmad\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62430}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b8780b21dcec2624c430bbaa08750521
+*** Element info: {Using=xpath, value=//input[@value='CMS Page #1']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at MedDashborad.AdminPanelCMSPages.ShowButtonCMSPages(AdminPanelCMSPages.java:100)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ShowButtonCMSPages -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:02:04 EET" name="teardown" finished-at="2021-01-04T22:02:07 EET" duration-ms="2901" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ShowButtonCMSPages status=FAILURE method=AdminPanelCMSPages.ShowButtonCMSPages()[pri:3, instance:MedDashborad.AdminPanelCMSPages@124c278f] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.ShowButtonCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:02:07 EET" name="setup" finished-at="2021-01-04T22:02:20 EET" duration-ms="13610" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.EditButtonCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="EditButtonCMSPages()[pri:4, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:02:20 EET" name="EditButtonCMSPages" finished-at="2021-01-04T22:02:27 EET" duration-ms="7075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditButtonCMSPages -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:02:27 EET" name="teardown" finished-at="2021-01-04T22:02:30 EET" duration-ms="2839" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EditButtonCMSPages status=SUCCESS method=AdminPanelCMSPages.EditButtonCMSPages()[pri:4, instance:MedDashborad.AdminPanelCMSPages@124c278f] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.EditButtonCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:02:30 EET" name="setup" finished-at="2021-01-04T22:02:42 EET" duration-ms="12412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.DownloadPDFCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DownloadPDFCMSPages()[pri:5, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:02:42 EET" name="DownloadPDFCMSPages" finished-at="2021-01-04T22:02:45 EET" duration-ms="2927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DownloadPDFCMSPages -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:02:45 EET" name="teardown" finished-at="2021-01-04T22:02:49 EET" duration-ms="3457" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DownloadPDFCMSPages status=SUCCESS method=AdminPanelCMSPages.DownloadPDFCMSPages()[pri:5, instance:MedDashborad.AdminPanelCMSPages@124c278f] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.DownloadPDFCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:02:49 EET" name="setup" finished-at="2021-01-04T22:03:02 EET" duration-ms="12691" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.DownloadCSVCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DownloadCSVCMSPages()[pri:6, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:03:02 EET" name="DownloadCSVCMSPages" finished-at="2021-01-04T22:03:04 EET" duration-ms="2801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DownloadCSVCMSPages -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:03:04 EET" name="teardown" finished-at="2021-01-04T22:03:08 EET" duration-ms="3238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DownloadCSVCMSPages status=SUCCESS method=AdminPanelCMSPages.DownloadCSVCMSPages()[pri:6, instance:MedDashborad.AdminPanelCMSPages@124c278f] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.DownloadCSVCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:03:08 EET" name="setup" finished-at="2021-01-04T22:03:21 EET" duration-ms="13469" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.DownloadExcelCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DownloadExcelCMSPages()[pri:7, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:03:21 EET" name="DownloadExcelCMSPages" finished-at="2021-01-04T22:03:24 EET" duration-ms="3288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DownloadExcelCMSPages -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:03:24 EET" name="teardown" finished-at="2021-01-04T22:03:27 EET" duration-ms="3164" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DownloadExcelCMSPages status=SUCCESS method=AdminPanelCMSPages.DownloadExcelCMSPages()[pri:7, instance:MedDashborad.AdminPanelCMSPages@124c278f] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.DownloadExcelCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:03:27 EET" name="setup" finished-at="2021-01-04T22:03:40 EET" duration-ms="12624" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.AddCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AddCMSPages()[pri:8, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:03:40 EET" name="AddCMSPages" finished-at="2021-01-04T22:03:47 EET" duration-ms="7328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCMSPages -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:03:47 EET" name="teardown" finished-at="2021-01-04T22:03:50 EET" duration-ms="2894" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddCMSPages status=SUCCESS method=AdminPanelCMSPages.AddCMSPages()[pri:8, instance:MedDashborad.AdminPanelCMSPages@124c278f] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.AddCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:03:50 EET" name="setup" finished-at="2021-01-04T22:04:06 EET" duration-ms="15696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.DeleteButtonCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DeleteButtonCMSPages()[pri:9, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:04:06 EET" name="DeleteButtonCMSPages" finished-at="2021-01-04T22:04:09 EET" duration-ms="2897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteButtonCMSPages -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:04:09 EET" name="teardown" finished-at="2021-01-04T22:04:12 EET" duration-ms="3155" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DeleteButtonCMSPages status=SUCCESS method=AdminPanelCMSPages.DeleteButtonCMSPages()[pri:9, instance:MedDashborad.AdminPanelCMSPages@124c278f] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelCMSPages.DeleteButtonCMSPages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="FinishedTesting()[pri:0, instance:MedDashborad.AdminPanelCMSPages@124c278f]" started-at="2021-01-04T22:04:13 EET" name="FinishedTesting" finished-at="2021-01-04T22:04:13 EET" duration-ms="831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FinishedTesting -->
+      </class> <!-- MedDashborad.AdminPanelCMSPages -->
+    </test> <!-- Automation Test -->
+  </suite> <!-- Qiotic Projects -->
 </testng-results>

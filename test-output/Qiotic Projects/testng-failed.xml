@@ -6,20 +6,15 @@
   </listeners>
   <test thread-count="5" name="Automation Test(failed)">
     <classes>
-      <class name="MedHubProject.HomePage">
+      <class name="MedDashborad.AdminPanelCMSPages">
         <methods>
-          <include name="setup"/>
           <include name="teardown"/>
-          <include name="CartCheck"/>
-        </methods>
-      </class> <!-- MedHubProject.HomePage -->
-      <class name="MedHubProject.LogInPage">
-        <methods>
+          <include name="FinishedTesting"/>
+          <include name="ShowButtonCMSPages"/>
           <include name="setup"/>
-          <include name="SignUpCheck"/>
-          <include name="teardown"/>
+          <include name="StartedTesting"/>
         </methods>
-      </class> <!-- MedHubProject.LogInPage -->
+      </class> <!-- MedDashborad.AdminPanelCMSPages -->
     </classes>
   </test> <!-- Automation Test(failed) -->
 </suite> <!-- Failed suite [Qiotic Projects] -->
