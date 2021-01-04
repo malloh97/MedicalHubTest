@@ -1,12 +1,11 @@
 package MedDashborad;
 
+
 import java.lang.reflect.Method;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,22 +13,35 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+import com.relevantcodes.extentreports.LogStatus;
 import atu.testrecorder.ATUTestRecorder;
 import atu.testrecorder.exceptions.ATUTestRecorderException;
 
-public class AdminPanelNews {
+public class AdminPanelNews extends TestBase {
 	
-	WebDriver driver;
-	ATUTestRecorder recorder;
 	
+	
+	@BeforeSuite
+	public void StartedTesting()
+	{
+		Started();
+	}
+	
+	@AfterSuite
+	public void FinishedTesting()
+	{
+		Finished();
+	}
 
 	@BeforeMethod
 	public void setuo(Method method) throws ATUTestRecorderException
 	{
-		
-		recorder = new ATUTestRecorder("D:\\Users\\ahmad\\eclipse-workspace\\Qiotic_Projects\\VideosRecorder",method.getName(),false);
+		test = extent.startTest(method.getName());
+		recorder = new ATUTestRecorder("D:\\Users\\ahmad\\eclipse-workspace\\Qiotic_Projects\\TestReport",method.getName(),false);
 		recorder.start();
 		ChromeOptions option = new ChromeOptions();
 		option.addArguments("--incognito");
@@ -44,14 +56,24 @@ public class AdminPanelNews {
 	}
 	
 	@AfterMethod
-	public void teardown(ITestResult result) throws ATUTestRecorderException
+	public void teardown(ITestResult result, Method method) throws ATUTestRecorderException
 	{
-		
 		recorder.stop();
+		if (result.getStatus() == ITestResult.SUCCESS)
+		{
+			test.log(LogStatus.PASS, "<a href='"+result.getName()+".mov" + "'><span class='lable info'>Download Video</span></a>");
+		}
+		else if(result.getStatus() == ITestResult.FAILURE)
+		{
+			test.log(LogStatus.FAIL,"<a href='"+result.getName()+".mov" + "'><span class='lable info'>Download Video</span></a>");
+		}
+		else 
+			test.log(LogStatus.SKIP,"Test Skipped");
+		
 		driver.quit();
 	}
 	
-	@Test(priority=1, enabled=false)
+	@Test(priority=1)
 	public void ShowEntiersBlogs()
 	{
 		driver.findElement(By.xpath("//span[text()='News & Blogs']")).click();
@@ -62,7 +84,7 @@ public class AdminPanelNews {
 	}
 	
 
-	@Test(priority=2, enabled=false) 
+	@Test(priority=2) 
 	public void SearchTextBoxBlogs()
 	{
 		driver.findElement(By.xpath("//span[text()='News & Blogs']")).click();
@@ -74,7 +96,7 @@ public class AdminPanelNews {
 	}
 	
 
-	@Test(priority=3, enabled=false) 
+	@Test(priority=3) 
 	public void ShowButtonBlogs()
 	{
 		driver.findElement(By.xpath("//span[text()='News & Blogs']")).click();
@@ -84,7 +106,7 @@ public class AdminPanelNews {
 		Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=4, enabled=false)
+	@Test(priority=4)
 	public void EditButtonBlogs()
 	{
 		driver.findElement(By.xpath("//span[text()='News & Blogs']")).click();
@@ -98,7 +120,7 @@ public class AdminPanelNews {
 	}
 	
 
-	@Test(priority=5, enabled=false)
+	@Test(priority=5)
 	public void DownloadPDFBlogs()
 	{
 		driver.findElement(By.xpath("//span[text()='News & Blogs']")).click();
@@ -106,7 +128,7 @@ public class AdminPanelNews {
 		driver.findElement(By.xpath("//span[text()='Excel']")).click();
 	}
 	
-	@Test(priority=6, enabled=false)
+	@Test(priority=6)
 	public void DownloadCSVBlogs()
 	{
 		driver.findElement(By.xpath("//span[text()='News & Blogs']")).click();
@@ -115,7 +137,7 @@ public class AdminPanelNews {
 	}
 	
 
-	@Test(priority=7, enabled=false)
+	@Test(priority=7)
 	public void DownloadExcelBlogs()
 	{
 		driver.findElement(By.xpath("//span[text()='News & Blogs']")).click();
@@ -124,7 +146,7 @@ public class AdminPanelNews {
 	}
 	
 
-	@Test(priority=8, enabled=false)
+	@Test(priority=8)
 	public void AddBlog()
 	{
 		driver.findElement(By.xpath("//span[text()='News & Blogs']")).click();

@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MedDashborad.AdminPanelNews">
+      <class name="MedDashborad.AdminPanelTourisum">
         <methods>
-          <include name="AddBlog"/>
+          <include name="StartedTesting"/>
+          <include name="DeleteButtonTourisum"/>
           <include name="teardown"/>
-          <include name="setuo"/>
+          <include name="AddTourisum"/>
+          <include name="setup"/>
+          <include name="FinishedTesting"/>
         </methods>
-      </class> <!-- MedDashborad.AdminPanelNews -->
+      </class> <!-- MedDashborad.AdminPanelTourisum -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

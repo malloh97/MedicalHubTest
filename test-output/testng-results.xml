@@ -1,39 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="9" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-03T15:26:20 EET" name="Default suite" finished-at="2021-01-03T15:26:58 EET" duration-ms="38103">
+  <suite started-at="2021-01-04T12:38:10 EET" name="Default suite" finished-at="2021-01-04T12:39:10 EET" duration-ms="60696">
     <groups>
     </groups>
-    <test started-at="2021-01-03T15:26:20 EET" name="Default test" finished-at="2021-01-03T15:26:58 EET" duration-ms="38103">
-      <class name="MedDashborad.AdminPanelNews">
-        <test-method is-config="true" signature="setuo(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelNews@11a9e7c8]" started-at="2021-01-03T15:26:20 EET" name="setuo" finished-at="2021-01-03T15:26:50 EET" duration-ms="30260" status="PASS">
+    <test started-at="2021-01-04T12:38:10 EET" name="Default test" finished-at="2021-01-04T12:39:10 EET" duration-ms="60696">
+      <class name="MedDashborad.AdminPanelOurPartners">
+        <test-method is-config="true" signature="StartedTesting()[pri:0, instance:MedDashborad.AdminPanelOurPartners@222114ba]" started-at="2021-01-04T12:38:09 EET" name="StartedTesting" finished-at="2021-01-04T12:38:10 EET" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartedTesting -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@222114ba]" started-at="2021-01-04T12:38:10 EET" name="setup" finished-at="2021-01-04T12:38:38 EET" duration-ms="28114" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelNews.DeleteButton()]]>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.ShowEntiersOurPartners()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setuo -->
-        <test-method signature="DeleteButton()[pri:9, instance:MedDashborad.AdminPanelNews@11a9e7c8]" started-at="2021-01-03T15:26:50 EET" name="DeleteButton" finished-at="2021-01-03T15:26:55 EET" duration-ms="4702" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="ShowEntiersOurPartners()[pri:1, instance:MedDashborad.AdminPanelOurPartners@222114ba]" started-at="2021-01-04T12:38:38 EET" name="ShowEntiersOurPartners" finished-at="2021-01-04T12:38:41 EET" duration-ms="3325" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DeleteButton -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:MedDashborad.AdminPanelNews@11a9e7c8]" started-at="2021-01-03T15:26:55 EET" name="teardown" finished-at="2021-01-03T15:26:58 EET" duration-ms="3081" status="PASS">
+        </test-method> <!-- ShowEntiersOurPartners -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@222114ba]" started-at="2021-01-04T12:38:41 EET" name="teardown" finished-at="2021-01-04T12:38:45 EET" duration-ms="3511" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DeleteButton status=SUCCESS method=AdminPanelNews.DeleteButton()[pri:9, instance:MedDashborad.AdminPanelNews@11a9e7c8] output={null}]]]>
+                <![CDATA[[TestResult name=ShowEntiersOurPartners status=SUCCESS method=AdminPanelOurPartners.ShowEntiersOurPartners()[pri:1, instance:MedDashborad.AdminPanelOurPartners@222114ba] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.ShowEntiersOurPartners()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- MedDashborad.AdminPanelNews -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@222114ba]" started-at="2021-01-04T12:38:45 EET" name="setup" finished-at="2021-01-04T12:39:04 EET" duration-ms="19376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.SearchTextBoxOurPartners()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SearchTextBoxOurPartners()[pri:2, instance:MedDashborad.AdminPanelOurPartners@222114ba]" started-at="2021-01-04T12:39:04 EET" name="SearchTextBoxOurPartners" finished-at="2021-01-04T12:39:07 EET" duration-ms="2887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchTextBoxOurPartners -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelOurPartners@222114ba]" started-at="2021-01-04T12:39:07 EET" name="teardown" finished-at="2021-01-04T12:39:10 EET" duration-ms="3303" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchTextBoxOurPartners status=SUCCESS method=AdminPanelOurPartners.SearchTextBoxOurPartners()[pri:2, instance:MedDashborad.AdminPanelOurPartners@222114ba] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedDashborad.AdminPanelOurPartners.SearchTextBoxOurPartners()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="FinishedTesting()[pri:0, instance:MedDashborad.AdminPanelOurPartners@222114ba]" started-at="2021-01-04T12:39:11 EET" name="FinishedTesting" finished-at="2021-01-04T12:39:12 EET" duration-ms="1285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FinishedTesting -->
+      </class> <!-- MedDashborad.AdminPanelOurPartners -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
