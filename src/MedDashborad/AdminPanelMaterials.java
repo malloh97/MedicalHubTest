@@ -4,25 +4,33 @@ import java.lang.reflect.Method;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-
 import atu.testrecorder.ATUTestRecorder;
 import atu.testrecorder.exceptions.ATUTestRecorderException;
 
-public class AdminPanelMaterials {
+public class AdminPanelMaterials extends TestBase{
 	
-	WebDriver driver;
-	ATUTestRecorder recorder;
+    @BeforeSuite
+    public void StartedTesting()
+    {
+    	Started();
+    }
+	
+    @AfterSuite
+    public void FinishedTesting()
+    {
+    	Finished();
+    }
 	
 	@BeforeMethod
 	public void setuo(Method method) throws ATUTestRecorderException

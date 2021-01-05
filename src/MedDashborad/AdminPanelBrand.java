@@ -26,32 +26,24 @@ import com.relevantcodes.extentreports.LogStatus;
 import atu.testrecorder.ATUTestRecorder;
 import atu.testrecorder.exceptions.ATUTestRecorderException;
 
-public class AdminPanelBrand {
+public class AdminPanelBrand extends TestBase{
 	
-	WebDriver driver;
-	ATUTestRecorder recorder;
-	ExtentReports extent; 
-	ExtentTest test; 
 	
 	@BeforeSuite
 	public void StartedTesting()
 	{
-		extent = new ExtentReports("D:\\Users\\ahmad\\eclipse-workspace\\Qiotic_Projects\\TestReport\\index.html", true);
-		extent.addSystemInfo("ProjectName", "MedicalHub");
-		extent.addSystemInfo("OS", "Windows");
-		extent.addSystemInfo("Tester","Ahmad");
-		extent.addSystemInfo("TestFramwork", "TestNG");
+		Started();
 	}
 	
 	@AfterSuite
 	public void FinishedTesing()
 	{
-		extent.flush();
+		Finished();
 	}
 	
 	
 	@BeforeMethod
-	public void setuo(Method method) throws ATUTestRecorderException
+	public void setup(Method method) throws ATUTestRecorderException
 	{
 		test = extent.startTest(method.getName());
 		recorder = new ATUTestRecorder("D:\\Users\\ahmad\\eclipse-workspace\\Qiotic_Projects\\VideosRecorder",method.getName(),false);

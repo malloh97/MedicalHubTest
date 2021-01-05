@@ -3,16 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MedDashborad.AdminPanelTourisum">
+      <class name="MedDashborad.AdminPanelCoupon">
         <methods>
-          <include name="StartedTesting"/>
-          <include name="DeleteButtonTourisum"/>
-          <include name="teardown"/>
-          <include name="AddTourisum"/>
-          <include name="setup"/>
           <include name="FinishedTesting"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="ShowButtonCoupon"/>
+          <include name="StartedTesting"/>
         </methods>
-      </class> <!-- MedDashborad.AdminPanelTourisum -->
+      </class> <!-- MedDashborad.AdminPanelCoupon -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
