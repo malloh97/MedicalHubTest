@@ -5,10 +5,17 @@
     <classes>
       <class name="MedDashborad.AdminPanelCoupon">
         <methods>
+          <include name="DownloadCSVCoupon"/>
+          <include name="AddCoupon"/>
           <include name="FinishedTesting"/>
           <include name="teardown"/>
           <include name="setup"/>
+          <include name="DownloadPDFCoupon"/>
+          <include name="DeleteButtonCoupon"/>
+          <include name="ShowEntiersCoupon"/>
+          <include name="SearchTextBoxCoupon"/>
           <include name="ShowButtonCoupon"/>
+          <include name="DownloadExcelCoupon"/>
           <include name="StartedTesting"/>
         </methods>
       </class> <!-- MedDashborad.AdminPanelCoupon -->
