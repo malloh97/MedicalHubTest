@@ -9,8 +9,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+
 import atu.testrecorder.ATUTestRecorder;
 import atu.testrecorder.exceptions.ATUTestRecorderException;
+
 
 public class TestBase {
 	
@@ -34,7 +36,7 @@ public class TestBase {
 			System.out.println("The Testing is Finished");
 		}
 	 
-	 public void before(String name) throws ATUTestRecorderException
+	 public void before(String name) throws ATUTestRecorderException 
 	 {
 
 			test = extent.startTest(name);

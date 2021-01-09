@@ -3,13 +3,8 @@ package MedDashborad;
 import java.lang.reflect.Method;
 import java.util.Iterator;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -18,12 +13,8 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-import atu.testrecorder.ATUTestRecorder;
 import atu.testrecorder.exceptions.ATUTestRecorderException;
 
 public class AdminPanelBrand extends TestBase{
@@ -45,19 +36,7 @@ public class AdminPanelBrand extends TestBase{
 	@BeforeMethod
 	public void setup(Method method) throws ATUTestRecorderException
 	{
-		test = extent.startTest(method.getName());
-		recorder = new ATUTestRecorder("D:\\Users\\ahmad\\eclipse-workspace\\Qiotic_Projects\\VideosRecorder",method.getName(),false);
-		recorder.start();
-		ChromeOptions option = new ChromeOptions();
-		option.addArguments("--incognito");
-	    System.setProperty("webdriver.chrome.driver","C:\\Users\\ahmad\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe");
-		driver = new ChromeDriver(option);
-		driver.get("https://medical.qiotic.info/en/admin/login");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.findElement(By.id("username")).sendKeys("admin");
-        driver.findElement(By.id("password")).sendKeys("123456");
-        driver.findElement(By.xpath("//button[text()='Sign In']")).click();
+		before(method.getName());
 	}
 	
 	@AfterMethod
@@ -68,10 +47,14 @@ public class AdminPanelBrand extends TestBase{
 		if (result.getStatus() == ITestResult.SUCCESS)
 		{
 			test.log(LogStatus.PASS, "Test Pass");
+			test.log(LogStatus.PASS,  "<a href='"+result.getName()+".mov" + "'><span class='lable info'>Download Video</span></a>");
+			test.log(LogStatus.PASS, "<a href='"+result.getName()+".png" + "'><span class='lable info'>Download Snapshot</span></a>");
 		} 
 		else if (result.getStatus() == ITestResult.FAILURE)
 		{
 			test.log(LogStatus.FAIL, "Test Fail");
+			test.log(LogStatus.FAIL,  "<a href='"+result.getName()+".mov" + "'><span class='lable info'>Download Video</span></a>");
+			test.log(LogStatus.FAIL, "<a href='"+result.getName()+".png" + "'><span class='lable info'>Download Snapshot</span></a>");
 		}
 		else 
 			test.log(LogStatus.SKIP, "Test Skipped");

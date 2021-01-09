@@ -1,269 +1,486 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-05T22:24:06 EET" name="Default suite" finished-at="2021-01-05T22:26:41 EET" duration-ms="154546">
+  <suite started-at="2021-01-09T19:49:28 EET" name="Default suite" finished-at="2021-01-09T19:53:51 EET" duration-ms="263496">
     <groups>
     </groups>
-    <test started-at="2021-01-05T22:24:06 EET" name="Default test" finished-at="2021-01-05T22:26:41 EET" duration-ms="154546">
-      <class name="MedDashborad.AdminPanelCoupon">
-        <test-method is-config="true" signature="StartedTesting()[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:24:06 EET" name="StartedTesting" finished-at="2021-01-05T22:24:06 EET" duration-ms="246" status="PASS">
+    <test started-at="2021-01-09T19:49:28 EET" name="Default test" finished-at="2021-01-09T19:53:51 EET" duration-ms="263496">
+      <class name="MedWebsite.HomePage">
+        <test-method is-config="true" signature="Started()[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:49:28 EET" name="Started" finished-at="2021-01-09T19:49:28 EET" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- StartedTesting -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:24:06 EET" name="setup" finished-at="2021-01-05T22:24:19 EET" duration-ms="13109" status="PASS">
+        </test-method> <!-- Started -->
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:49:28 EET" name="Setup" finished-at="2021-01-09T19:49:42 EET" duration-ms="14575" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelCoupon.ShowEntiersCoupon()]]>
+                <![CDATA[public void MedWebsite.HomePage.LanguageButtonCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="ShowEntiersCoupon()[pri:1, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:24:19 EET" name="ShowEntiersCoupon" finished-at="2021-01-05T22:24:22 EET" duration-ms="2933" status="PASS">
+        </test-method> <!-- Setup -->
+        <test-method signature="LanguageButtonCheck()[pri:1, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:49:42 EET" name="LanguageButtonCheck" finished-at="2021-01-09T19:49:45 EET" duration-ms="3079" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ShowEntiersCoupon -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:24:22 EET" name="teardown" finished-at="2021-01-05T22:24:26 EET" duration-ms="3400" status="PASS">
+        </test-method> <!-- LanguageButtonCheck -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:49:46 EET" name="Teardown" finished-at="2021-01-09T19:49:50 EET" duration-ms="4460" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ShowEntiersCoupon status=SUCCESS method=AdminPanelCoupon.ShowEntiersCoupon()[pri:1, instance:MedDashborad.AdminPanelCoupon@45018215] output={null}]]]>
+                <![CDATA[[TestResult name=LanguageButtonCheck status=SUCCESS method=HomePage.LanguageButtonCheck()[pri:1, instance:MedWebsite.HomePage@29176cc1] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelCoupon.ShowEntiersCoupon()]]>
+                <![CDATA[public void MedWebsite.HomePage.LanguageButtonCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:24:26 EET" name="setup" finished-at="2021-01-05T22:24:38 EET" duration-ms="11985" status="PASS">
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:49:50 EET" name="Setup" finished-at="2021-01-09T19:50:01 EET" duration-ms="10585" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelCoupon.SearchTextBoxCoupon()]]>
+                <![CDATA[public void MedWebsite.HomePage.PhoneNumberCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="SearchTextBoxCoupon()[pri:2, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:24:38 EET" name="SearchTextBoxCoupon" finished-at="2021-01-05T22:24:41 EET" duration-ms="3092" status="PASS">
+        </test-method> <!-- Setup -->
+        <test-method signature="PhoneNumberCheck()[pri:2, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:50:01 EET" name="PhoneNumberCheck" finished-at="2021-01-09T19:50:02 EET" duration-ms="990" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SearchTextBoxCoupon -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:24:41 EET" name="teardown" finished-at="2021-01-05T22:24:44 EET" duration-ms="3279" status="PASS">
+        </test-method> <!-- PhoneNumberCheck -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:50:02 EET" name="Teardown" finished-at="2021-01-09T19:50:06 EET" duration-ms="3950" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SearchTextBoxCoupon status=SUCCESS method=AdminPanelCoupon.SearchTextBoxCoupon()[pri:2, instance:MedDashborad.AdminPanelCoupon@45018215] output={null}]]]>
+                <![CDATA[[TestResult name=PhoneNumberCheck status=SUCCESS method=HomePage.PhoneNumberCheck()[pri:2, instance:MedWebsite.HomePage@29176cc1] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelCoupon.SearchTextBoxCoupon()]]>
+                <![CDATA[public void MedWebsite.HomePage.PhoneNumberCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:24:44 EET" name="setup" finished-at="2021-01-05T22:24:56 EET" duration-ms="12018" status="PASS">
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:50:06 EET" name="Setup" finished-at="2021-01-09T19:50:16 EET" duration-ms="10611" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelCoupon.ShowButtonCoupon()]]>
+                <![CDATA[public void MedWebsite.HomePage.ContuctCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="ShowButtonCoupon()[pri:3, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:24:56 EET" name="ShowButtonCoupon" finished-at="2021-01-05T22:25:00 EET" duration-ms="3856" status="PASS">
+        </test-method> <!-- Setup -->
+        <test-method signature="ContuctCheck()[pri:3, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:50:16 EET" name="ContuctCheck" finished-at="2021-01-09T19:50:23 EET" duration-ms="6965" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ShowButtonCoupon -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:25:00 EET" name="teardown" finished-at="2021-01-05T22:25:03 EET" duration-ms="3263" status="PASS">
+        </test-method> <!-- ContuctCheck -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:50:23 EET" name="Teardown" finished-at="2021-01-09T19:50:27 EET" duration-ms="3474" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ShowButtonCoupon status=SUCCESS method=AdminPanelCoupon.ShowButtonCoupon()[pri:3, instance:MedDashborad.AdminPanelCoupon@45018215] output={null}]]]>
+                <![CDATA[[TestResult name=ContuctCheck status=SUCCESS method=HomePage.ContuctCheck()[pri:3, instance:MedWebsite.HomePage@29176cc1] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelCoupon.ShowButtonCoupon()]]>
+                <![CDATA[public void MedWebsite.HomePage.ContuctCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:25:03 EET" name="setup" finished-at="2021-01-05T22:25:15 EET" duration-ms="12234" status="PASS">
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:50:27 EET" name="Setup" finished-at="2021-01-09T19:50:41 EET" duration-ms="14296" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelCoupon.DownloadPDFCoupon()]]>
+                <![CDATA[public void MedWebsite.HomePage.FacebookCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="DownloadPDFCoupon()[pri:4, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:25:15 EET" name="DownloadPDFCoupon" finished-at="2021-01-05T22:25:18 EET" duration-ms="2953" status="PASS">
+        </test-method> <!-- Setup -->
+        <test-method signature="FacebookCheck()[pri:4, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:50:41 EET" name="FacebookCheck" finished-at="2021-01-09T19:50:42 EET" duration-ms="1192" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DownloadPDFCoupon -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:25:18 EET" name="teardown" finished-at="2021-01-05T22:25:22 EET" duration-ms="3377" status="PASS">
+        </test-method> <!-- FacebookCheck -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:50:42 EET" name="Teardown" finished-at="2021-01-09T19:50:46 EET" duration-ms="4067" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DownloadPDFCoupon status=SUCCESS method=AdminPanelCoupon.DownloadPDFCoupon()[pri:4, instance:MedDashborad.AdminPanelCoupon@45018215] output={null}]]]>
+                <![CDATA[[TestResult name=FacebookCheck status=SUCCESS method=HomePage.FacebookCheck()[pri:4, instance:MedWebsite.HomePage@29176cc1] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelCoupon.DownloadPDFCoupon()]]>
+                <![CDATA[public void MedWebsite.HomePage.FacebookCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:25:22 EET" name="setup" finished-at="2021-01-05T22:25:34 EET" duration-ms="11882" status="PASS">
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:50:46 EET" name="Setup" finished-at="2021-01-09T19:50:58 EET" duration-ms="12047" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelCoupon.DownloadCSVCoupon()]]>
+                <![CDATA[public void MedWebsite.HomePage.LinkedInCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="DownloadCSVCoupon()[pri:5, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:25:34 EET" name="DownloadCSVCoupon" finished-at="2021-01-05T22:25:36 EET" duration-ms="2970" status="PASS">
+        </test-method> <!-- Setup -->
+        <test-method signature="LinkedInCheck()[pri:5, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:50:58 EET" name="LinkedInCheck" finished-at="2021-01-09T19:50:59 EET" duration-ms="907" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DownloadCSVCoupon -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:25:36 EET" name="teardown" finished-at="2021-01-05T22:25:40 EET" duration-ms="3229" status="PASS">
+        </test-method> <!-- LinkedInCheck -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:50:59 EET" name="Teardown" finished-at="2021-01-09T19:51:03 EET" duration-ms="4025" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DownloadCSVCoupon status=SUCCESS method=AdminPanelCoupon.DownloadCSVCoupon()[pri:5, instance:MedDashborad.AdminPanelCoupon@45018215] output={null}]]]>
+                <![CDATA[[TestResult name=LinkedInCheck status=SUCCESS method=HomePage.LinkedInCheck()[pri:5, instance:MedWebsite.HomePage@29176cc1] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelCoupon.DownloadCSVCoupon()]]>
+                <![CDATA[public void MedWebsite.HomePage.LinkedInCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:25:40 EET" name="setup" finished-at="2021-01-05T22:25:50 EET" duration-ms="10435" status="PASS">
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:51:03 EET" name="Setup" finished-at="2021-01-09T19:51:14 EET" duration-ms="10560" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelCoupon.DownloadExcelCoupon()]]>
+                <![CDATA[public void MedWebsite.HomePage.TwitterCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="DownloadExcelCoupon()[pri:6, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:25:50 EET" name="DownloadExcelCoupon" finished-at="2021-01-05T22:25:53 EET" duration-ms="3083" status="PASS">
+        </test-method> <!-- Setup -->
+        <test-method signature="TwitterCheck()[pri:6, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:51:14 EET" name="TwitterCheck" finished-at="2021-01-09T19:51:15 EET" duration-ms="846" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DownloadExcelCoupon -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:25:53 EET" name="teardown" finished-at="2021-01-05T22:25:56 EET" duration-ms="3252" status="PASS">
+        </test-method> <!-- TwitterCheck -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:51:15 EET" name="Teardown" finished-at="2021-01-09T19:51:19 EET" duration-ms="4310" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DownloadExcelCoupon status=SUCCESS method=AdminPanelCoupon.DownloadExcelCoupon()[pri:6, instance:MedDashborad.AdminPanelCoupon@45018215] output={null}]]]>
+                <![CDATA[[TestResult name=TwitterCheck status=SUCCESS method=HomePage.TwitterCheck()[pri:6, instance:MedWebsite.HomePage@29176cc1] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelCoupon.DownloadExcelCoupon()]]>
+                <![CDATA[public void MedWebsite.HomePage.TwitterCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:25:56 EET" name="setup" finished-at="2021-01-05T22:26:09 EET" duration-ms="12889" status="PASS">
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:51:19 EET" name="Setup" finished-at="2021-01-09T19:51:37 EET" duration-ms="17899" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelCoupon.AddCoupon()]]>
+                <![CDATA[public void MedWebsite.HomePage.InstagrameCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AddCoupon()[pri:7, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:26:09 EET" name="AddCoupon" finished-at="2021-01-05T22:26:15 EET" duration-ms="5859" status="PASS">
+        </test-method> <!-- Setup -->
+        <test-method signature="InstagrameCheck()[pri:7, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:51:37 EET" name="InstagrameCheck" finished-at="2021-01-09T19:51:38 EET" duration-ms="863" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddCoupon -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:26:15 EET" name="teardown" finished-at="2021-01-05T22:26:19 EET" duration-ms="3664" status="PASS">
+        </test-method> <!-- InstagrameCheck -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:51:38 EET" name="Teardown" finished-at="2021-01-09T19:51:41 EET" duration-ms="3769" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddCoupon status=SUCCESS method=AdminPanelCoupon.AddCoupon()[pri:7, instance:MedDashborad.AdminPanelCoupon@45018215] output={null}]]]>
+                <![CDATA[[TestResult name=InstagrameCheck status=SUCCESS method=HomePage.InstagrameCheck()[pri:7, instance:MedWebsite.HomePage@29176cc1] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelCoupon.AddCoupon()]]>
+                <![CDATA[public void MedWebsite.HomePage.InstagrameCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:26:19 EET" name="setup" finished-at="2021-01-05T22:26:32 EET" duration-ms="12711" status="PASS">
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:51:41 EET" name="Setup" finished-at="2021-01-09T19:51:53 EET" duration-ms="11506" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelCoupon.DeleteButtonCoupon()]]>
+                <![CDATA[public void MedWebsite.HomePage.SnapchatCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="DeleteButtonCoupon()[pri:8, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:26:32 EET" name="DeleteButtonCoupon" finished-at="2021-01-05T22:26:37 EET" duration-ms="5798" status="PASS">
+        </test-method> <!-- Setup -->
+        <test-method signature="SnapchatCheck()[pri:8, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:51:53 EET" name="SnapchatCheck" finished-at="2021-01-09T19:51:54 EET" duration-ms="1102" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DeleteButtonCoupon -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:26:37 EET" name="teardown" finished-at="2021-01-05T22:26:41 EET" duration-ms="3196" status="PASS">
+        </test-method> <!-- SnapchatCheck -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:51:54 EET" name="Teardown" finished-at="2021-01-09T19:51:58 EET" duration-ms="4073" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DeleteButtonCoupon status=SUCCESS method=AdminPanelCoupon.DeleteButtonCoupon()[pri:8, instance:MedDashborad.AdminPanelCoupon@45018215] output={null}]]]>
+                <![CDATA[[TestResult name=SnapchatCheck status=SUCCESS method=HomePage.SnapchatCheck()[pri:8, instance:MedWebsite.HomePage@29176cc1] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void MedDashborad.AdminPanelCoupon.DeleteButtonCoupon()]]>
+                <![CDATA[public void MedWebsite.HomePage.SnapchatCheck()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="FinishedTesting()[pri:0, instance:MedDashborad.AdminPanelCoupon@45018215]" started-at="2021-01-05T22:26:41 EET" name="FinishedTesting" finished-at="2021-01-05T22:26:41 EET" duration-ms="634" status="PASS">
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:51:58 EET" name="Setup" finished-at="2021-01-09T19:52:08 EET" duration-ms="10398" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedWebsite.HomePage.AboutUsCheck()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FinishedTesting -->
-      </class> <!-- MedDashborad.AdminPanelCoupon -->
+        </test-method> <!-- Setup -->
+        <test-method signature="AboutUsCheck()[pri:9, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:52:08 EET" name="AboutUsCheck" finished-at="2021-01-09T19:52:09 EET" duration-ms="639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AboutUsCheck -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:52:09 EET" name="Teardown" finished-at="2021-01-09T19:52:13 EET" duration-ms="3844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AboutUsCheck status=SUCCESS method=HomePage.AboutUsCheck()[pri:9, instance:MedWebsite.HomePage@29176cc1] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedWebsite.HomePage.AboutUsCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:52:13 EET" name="Setup" finished-at="2021-01-09T19:52:24 EET" duration-ms="10673" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedWebsite.HomePage.DirectoriesCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="DirectoriesCheck()[pri:10, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:52:24 EET" name="DirectoriesCheck" finished-at="2021-01-09T19:52:24 EET" duration-ms="365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DirectoriesCheck -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:52:24 EET" name="Teardown" finished-at="2021-01-09T19:52:28 EET" duration-ms="3812" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DirectoriesCheck status=SUCCESS method=HomePage.DirectoriesCheck()[pri:10, instance:MedWebsite.HomePage@29176cc1] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedWebsite.HomePage.DirectoriesCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:52:28 EET" name="Setup" finished-at="2021-01-09T19:52:38 EET" duration-ms="10451" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedWebsite.HomePage.ServicesCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="ServicesCheck()[pri:11, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:52:38 EET" name="ServicesCheck" finished-at="2021-01-09T19:52:39 EET" duration-ms="718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ServicesCheck -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:52:39 EET" name="Teardown" finished-at="2021-01-09T19:52:45 EET" duration-ms="6220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ServicesCheck status=SUCCESS method=HomePage.ServicesCheck()[pri:11, instance:MedWebsite.HomePage@29176cc1] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedWebsite.HomePage.ServicesCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:52:45 EET" name="Setup" finished-at="2021-01-09T19:52:59 EET" duration-ms="13419" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedWebsite.HomePage.BlogsNewsCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="BlogsNewsCheck()[pri:12, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:52:59 EET" name="BlogsNewsCheck" finished-at="2021-01-09T19:52:59 EET" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BlogsNewsCheck -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:52:59 EET" name="Teardown" finished-at="2021-01-09T19:53:03 EET" duration-ms="4195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BlogsNewsCheck status=SUCCESS method=HomePage.BlogsNewsCheck()[pri:12, instance:MedWebsite.HomePage@29176cc1] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedWebsite.HomePage.BlogsNewsCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:53:03 EET" name="Setup" finished-at="2021-01-09T19:53:14 EET" duration-ms="10991" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedWebsite.HomePage.MedicalTourisumCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="MedicalTourisumCheck()[pri:13, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:53:14 EET" name="MedicalTourisumCheck" finished-at="2021-01-09T19:53:15 EET" duration-ms="459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MedicalTourisumCheck -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:53:15 EET" name="Teardown" finished-at="2021-01-09T19:53:18 EET" duration-ms="3716" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MedicalTourisumCheck status=SUCCESS method=HomePage.MedicalTourisumCheck()[pri:13, instance:MedWebsite.HomePage@29176cc1] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedWebsite.HomePage.MedicalTourisumCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:53:18 EET" name="Setup" finished-at="2021-01-09T19:53:29 EET" duration-ms="10159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedWebsite.HomePage.MyCartCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="MyCartCheck()[pri:14, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:53:29 EET" name="MyCartCheck" finished-at="2021-01-09T19:53:30 EET" duration-ms="1154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyCartCheck -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:53:30 EET" name="Teardown" finished-at="2021-01-09T19:53:34 EET" duration-ms="3817" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MyCartCheck status=SUCCESS method=HomePage.MyCartCheck()[pri:14, instance:MedWebsite.HomePage@29176cc1] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedWebsite.HomePage.MyCartCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:53:34 EET" name="Setup" finished-at="2021-01-09T19:53:45 EET" duration-ms="11804" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void MedWebsite.HomePage.SearchCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="SearchCheck()[pri:15, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:53:45 EET" name="SearchCheck" finished-at="2021-01-09T19:53:48 EET" duration-ms="2454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchCheck -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:53:48 EET" name="Teardown" finished-at="2021-01-09T19:53:51 EET" duration-ms="3486" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchCheck status=SUCCESS method=HomePage.SearchCheck()[pri:15, instance:MedWebsite.HomePage@29176cc1] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void MedWebsite.HomePage.SearchCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="Finished()[pri:0, instance:MedWebsite.HomePage@29176cc1]" started-at="2021-01-09T19:53:51 EET" name="Finished" finished-at="2021-01-09T19:53:52 EET" duration-ms="726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Finished -->
+      </class> <!-- MedWebsite.HomePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

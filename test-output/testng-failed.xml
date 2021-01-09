@@ -3,22 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MedDashborad.AdminPanelCoupon">
+      <class name="MedWebsite.HomePage">
         <methods>
-          <include name="DownloadCSVCoupon"/>
-          <include name="AddCoupon"/>
-          <include name="FinishedTesting"/>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="DownloadPDFCoupon"/>
-          <include name="DeleteButtonCoupon"/>
-          <include name="ShowEntiersCoupon"/>
-          <include name="SearchTextBoxCoupon"/>
-          <include name="ShowButtonCoupon"/>
-          <include name="DownloadExcelCoupon"/>
-          <include name="StartedTesting"/>
+          <include name="Started"/>
+          <include name="Teardown"/>
+          <include name="MyCartCheck"/>
+          <include name="Finished"/>
+          <include name="Setup"/>
         </methods>
-      </class> <!-- MedDashborad.AdminPanelCoupon -->
+      </class> <!-- MedWebsite.HomePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

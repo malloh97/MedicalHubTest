@@ -19,7 +19,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.LogStatus;
+
 import atu.testrecorder.exceptions.ATUTestRecorderException;
+
 
 public class AdminPanelCoupon extends TestBase {
 	
