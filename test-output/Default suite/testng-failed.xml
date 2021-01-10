@@ -6,8 +6,8 @@
       <class name="MedWebsite.HomePage">
         <methods>
           <include name="Started"/>
+          <include name="ConnectWithUsTwitter"/>
           <include name="Teardown"/>
-          <include name="MyCartCheck"/>
           <include name="Finished"/>
           <include name="Setup"/>
         </methods>

@@ -6,6 +6,7 @@ import java.lang.reflect.Method;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
@@ -62,7 +63,7 @@ public class HomePage extends TestData {
 			test.log(LogStatus.SKIP, "TestCase is Skipped");
 		recorder.stop();
 		File srcfile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE );
-		FileUtils.copyFile(srcfile, new File("D:\\Users\\ahmad\\eclipse-workspace\\Qiotic_Projects\\MedTestReport"+method.getName()+".png"));
+		FileUtils.copyFile(srcfile, new File("D:\\Users\\ahmad\\eclipse-workspace\\Qiotic_Projects\\AllSnapshots"+method.getName()+".png"));
 		driver.quit();
 	}
 	
@@ -184,5 +185,86 @@ public class HomePage extends TestData {
 		driver.findElement(By.id("searchbox")).sendKeys("Brand");
 		driver.findElement(By.id("searchsubmit")).click();
 	}
+	
+
+	@Test(priority=16)
+	public void ShopNowCheck()
+	{
+    	driver.findElement(By.xpath("//span[@class='button_text_container']")).click();
+    	boolean Actual = driver.findElement(By.xpath("//span[text()='Category']")).isDisplayed();
+    	Assert.assertTrue(Actual);
+	}
+	
+	@Test(priority=17)
+	public void HosptialCheck()
+	{
+    	driver.findElement(By.xpath("(//span[@class='button_text_container'])[2]")).click();
+    	boolean Actual = driver.findElement(By.xpath("//h2[text()='Hospital']")).isDisplayed();
+    	Assert.assertTrue(Actual);
+	}
+	
+	@Test(priority=18)
+	public void VendorCheck()
+	{
+    	driver.findElement(By.xpath("(//span[@class='button_text_container'])[3]")).click();
+    	boolean Actual = driver.findElement(By.xpath("//h2[text()='Vendor']")).isDisplayed();
+    	Assert.assertTrue(Actual);
+	}
+	
+	@Test(priority=19, enabled=false)
+	public void ConsultancyCheck()
+	{
+    	driver.findElement(By.xpath("(//span[@class='button_text_container'])[4]")).click();
+    	boolean Actual = driver.findElement(By.xpath("//h2[text()='Consultancy']")).isDisplayed();
+    	Assert.assertTrue(Actual);
+	}
+	
+	@Test(priority=20)
+	public void OurMissionCheck()
+	{
+		Actions action = new Actions(driver);
+		WebElement ourmission = driver.findElement(By.xpath("//h3[text()='Our Mission']"));
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+    	js.executeScript("arguments[0].scrollIntoView(true);", ourmission);
+    	action.moveToElement(ourmission).build().perform();
+	}
+	
+
+	@Test(priority=21)
+	public void OurVisionCheck()
+	{
+		Actions action = new Actions(driver);
+		WebElement ourmission = driver.findElement(By.xpath("//h3[text()='Our Vision']"));
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+    	js.executeScript("arguments[0].scrollIntoView(true);", ourmission);
+    	action.moveToElement(ourmission).build().perform();
+	}
+	
+	@Test(priority=22)
+	public void OurValueCheck()
+	{
+		Actions action = new Actions(driver);
+		WebElement ourmission = driver.findElement(By.xpath("//h3[text()='Our Value']"));
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+    	js.executeScript("arguments[0].scrollIntoView(true);", ourmission);
+    	action.moveToElement(ourmission).build().perform();
+	}
+	
+	@Test(priority=23)
+	public void OurPartnersCheck()
+	{
+        WebElement pic = driver.findElement(By.xpath("//img[@src='https://medical.qiotic.info/website/images/partners/Logo-Hospital.png']"));
+    	Actions action = new Actions(driver);
+    	action.moveToElement(pic).click().build().perform();
+	}
+	
+	@Test(priority=24)
+	public void SubscribNow()
+	{
+		driver.findElement(By.xpath("//input[@type='email']")).sendKeys("ahmadmalloh97@gmail.com");
+		driver.findElement(By.xpath("//i[contains(@class,'fa fa-long-arrow-right')]")).click();
+	}
+	
+
 
 }
