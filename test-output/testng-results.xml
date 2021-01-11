@@ -1,730 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="24" passed="23" failed="0" skipped="0">
+<testng-results ignored="36" total="40" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-10T19:13:02 EET" name="Default suite" finished-at="2021-01-10T19:20:09 EET" duration-ms="427133">
+  <suite started-at="2021-01-11T22:10:24 EET" name="Default suite" finished-at="2021-01-11T22:11:49 EET" duration-ms="84548">
     <groups>
     </groups>
-    <test started-at="2021-01-10T19:13:02 EET" name="Default test" finished-at="2021-01-10T19:20:09 EET" duration-ms="427133">
+    <test started-at="2021-01-11T22:10:24 EET" name="Default test" finished-at="2021-01-11T22:11:49 EET" duration-ms="84548">
       <class name="MedWebsite.HomePage">
-        <test-method is-config="true" signature="Started()[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:13:02 EET" name="Started" finished-at="2021-01-10T19:13:02 EET" duration-ms="249" status="PASS">
+        <test-method is-config="true" signature="Started()[pri:0, instance:MedWebsite.HomePage@54c562f7]" started-at="2021-01-11T22:10:24 EET" name="Started" finished-at="2021-01-11T22:10:24 EET" duration-ms="270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Started -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:13:02 EET" name="Setup" finished-at="2021-01-10T19:13:15 EET" duration-ms="12272" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@54c562f7]" started-at="2021-01-11T22:10:24 EET" name="Setup" finished-at="2021-01-11T22:10:37 EET" duration-ms="12941" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void MedWebsite.HomePage.LanguageButtonCheck()]]>
+                <![CDATA[public void MedWebsite.HomePage.HelpPageAdvancedSearch()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="LanguageButtonCheck()[pri:1, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:13:15 EET" name="LanguageButtonCheck" finished-at="2021-01-10T19:13:18 EET" duration-ms="3828" status="PASS">
+        <test-method signature="HelpPageAdvancedSearch()[pri:37, instance:MedWebsite.HomePage@54c562f7]" started-at="2021-01-11T22:10:37 EET" name="HelpPageAdvancedSearch" finished-at="2021-01-11T22:10:51 EET" duration-ms="13928" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[text()='Advanced Search']"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-LPDGG0M', ip: '192.168.1.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\ahmad\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53944}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: af6832d92d9a1d5783c1c234292799a5
+*** Element info: {Using=xpath, value=//li[text()='Advanced Search']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[text()='Advanced Search']"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-LPDGG0M', ip: '192.168.1.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\ahmad\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53944}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: af6832d92d9a1d5783c1c234292799a5
+*** Element info: {Using=xpath, value=//li[text()='Advanced Search']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at MedWebsite.HomePage.HelpPageAdvancedSearch(HomePage.java:399)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LanguageButtonCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:13:18 EET" name="Teardown" finished-at="2021-01-10T19:13:23 EET" duration-ms="4323" status="PASS">
+        </test-method> <!-- HelpPageAdvancedSearch -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@54c562f7]" started-at="2021-01-11T22:10:51 EET" name="Teardown" finished-at="2021-01-11T22:10:55 EET" duration-ms="3304" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LanguageButtonCheck status=SUCCESS method=HomePage.LanguageButtonCheck()[pri:1, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
+                <![CDATA[[TestResult name=HelpPageAdvancedSearch status=FAILURE method=HomePage.HelpPageAdvancedSearch()[pri:37, instance:MedWebsite.HomePage@54c562f7] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void MedWebsite.HomePage.LanguageButtonCheck()]]>
+                <![CDATA[public void MedWebsite.HomePage.HelpPageAdvancedSearch()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:13:23 EET" name="Setup" finished-at="2021-01-10T19:13:33 EET" duration-ms="10598" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@54c562f7]" started-at="2021-01-11T22:10:55 EET" name="Setup" finished-at="2021-01-11T22:11:06 EET" duration-ms="10822" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void MedWebsite.HomePage.PhoneNumberCheck()]]>
+                <![CDATA[public void MedWebsite.HomePage.HelpPageHelpFaqs()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="PhoneNumberCheck()[pri:2, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:13:33 EET" name="PhoneNumberCheck" finished-at="2021-01-10T19:13:34 EET" duration-ms="834" status="PASS">
+        <test-method signature="HelpPageHelpFaqs()[pri:38, instance:MedWebsite.HomePage@54c562f7]" started-at="2021-01-11T22:11:06 EET" name="HelpPageHelpFaqs" finished-at="2021-01-11T22:11:08 EET" duration-ms="2594" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PhoneNumberCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:13:34 EET" name="Teardown" finished-at="2021-01-10T19:13:38 EET" duration-ms="4171" status="PASS">
+        </test-method> <!-- HelpPageHelpFaqs -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@54c562f7]" started-at="2021-01-11T22:11:08 EET" name="Teardown" finished-at="2021-01-11T22:11:12 EET" duration-ms="3445" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PhoneNumberCheck status=SUCCESS method=HomePage.PhoneNumberCheck()[pri:2, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
+                <![CDATA[[TestResult name=HelpPageHelpFaqs status=SUCCESS method=HomePage.HelpPageHelpFaqs()[pri:38, instance:MedWebsite.HomePage@54c562f7] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void MedWebsite.HomePage.PhoneNumberCheck()]]>
+                <![CDATA[public void MedWebsite.HomePage.HelpPageHelpFaqs()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:13:38 EET" name="Setup" finished-at="2021-01-10T19:13:50 EET" duration-ms="11193" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@54c562f7]" started-at="2021-01-11T22:11:12 EET" name="Setup" finished-at="2021-01-11T22:11:25 EET" duration-ms="13111" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void MedWebsite.HomePage.ContuctCheck()]]>
+                <![CDATA[public void MedWebsite.HomePage.HelpPageStoreLocation()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="ContuctCheck()[pri:3, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:13:50 EET" name="ContuctCheck" finished-at="2021-01-10T19:13:59 EET" duration-ms="9221" status="PASS">
+        <test-method signature="HelpPageStoreLocation()[pri:39, instance:MedWebsite.HomePage@54c562f7]" started-at="2021-01-11T22:11:25 EET" name="HelpPageStoreLocation" finished-at="2021-01-11T22:11:27 EET" duration-ms="2192" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ContuctCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:13:59 EET" name="Teardown" finished-at="2021-01-10T19:14:02 EET" duration-ms="3545" status="PASS">
+        </test-method> <!-- HelpPageStoreLocation -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@54c562f7]" started-at="2021-01-11T22:11:27 EET" name="Teardown" finished-at="2021-01-11T22:11:30 EET" duration-ms="3560" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ContuctCheck status=SUCCESS method=HomePage.ContuctCheck()[pri:3, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
+                <![CDATA[[TestResult name=HelpPageStoreLocation status=SUCCESS method=HomePage.HelpPageStoreLocation()[pri:39, instance:MedWebsite.HomePage@54c562f7] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void MedWebsite.HomePage.ContuctCheck()]]>
+                <![CDATA[public void MedWebsite.HomePage.HelpPageStoreLocation()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:14:02 EET" name="Setup" finished-at="2021-01-10T19:14:15 EET" duration-ms="12383" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@54c562f7]" started-at="2021-01-11T22:11:30 EET" name="Setup" finished-at="2021-01-11T22:11:43 EET" duration-ms="12135" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void MedWebsite.HomePage.FacebookCheck()]]>
+                <![CDATA[public void MedWebsite.HomePage.HelpPageOrdersReturns()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="FacebookCheck()[pri:4, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:14:15 EET" name="FacebookCheck" finished-at="2021-01-10T19:14:16 EET" duration-ms="772" status="PASS">
+        <test-method signature="HelpPageOrdersReturns()[pri:40, instance:MedWebsite.HomePage@54c562f7]" started-at="2021-01-11T22:11:43 EET" name="HelpPageOrdersReturns" finished-at="2021-01-11T22:11:46 EET" duration-ms="2981" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FacebookCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:14:16 EET" name="Teardown" finished-at="2021-01-10T19:14:19 EET" duration-ms="3924" status="PASS">
+        </test-method> <!-- HelpPageOrdersReturns -->
+        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@54c562f7]" started-at="2021-01-11T22:11:46 EET" name="Teardown" finished-at="2021-01-11T22:11:49 EET" duration-ms="3458" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=FacebookCheck status=SUCCESS method=HomePage.FacebookCheck()[pri:4, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
+                <![CDATA[[TestResult name=HelpPageOrdersReturns status=SUCCESS method=HomePage.HelpPageOrdersReturns()[pri:40, instance:MedWebsite.HomePage@54c562f7] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void MedWebsite.HomePage.FacebookCheck()]]>
+                <![CDATA[public void MedWebsite.HomePage.HelpPageOrdersReturns()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:14:19 EET" name="Setup" finished-at="2021-01-10T19:14:31 EET" duration-ms="11027" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.LinkedInCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="LinkedInCheck()[pri:5, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:14:31 EET" name="LinkedInCheck" finished-at="2021-01-10T19:14:31 EET" duration-ms="962" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LinkedInCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:14:31 EET" name="Teardown" finished-at="2021-01-10T19:14:35 EET" duration-ms="3699" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LinkedInCheck status=SUCCESS method=HomePage.LinkedInCheck()[pri:5, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.LinkedInCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:14:35 EET" name="Setup" finished-at="2021-01-10T19:14:46 EET" duration-ms="10740" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.TwitterCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="TwitterCheck()[pri:6, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:14:46 EET" name="TwitterCheck" finished-at="2021-01-10T19:14:47 EET" duration-ms="1085" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TwitterCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:14:47 EET" name="Teardown" finished-at="2021-01-10T19:14:51 EET" duration-ms="4262" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TwitterCheck status=SUCCESS method=HomePage.TwitterCheck()[pri:6, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.TwitterCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:14:51 EET" name="Setup" finished-at="2021-01-10T19:15:03 EET" duration-ms="11349" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.InstagrameCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="InstagrameCheck()[pri:7, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:15:03 EET" name="InstagrameCheck" finished-at="2021-01-10T19:15:04 EET" duration-ms="937" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InstagrameCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:15:04 EET" name="Teardown" finished-at="2021-01-10T19:15:07 EET" duration-ms="3838" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=InstagrameCheck status=SUCCESS method=HomePage.InstagrameCheck()[pri:7, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.InstagrameCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:15:07 EET" name="Setup" finished-at="2021-01-10T19:15:19 EET" duration-ms="11566" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.SnapchatCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="SnapchatCheck()[pri:8, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:15:19 EET" name="SnapchatCheck" finished-at="2021-01-10T19:15:20 EET" duration-ms="1191" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SnapchatCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:15:20 EET" name="Teardown" finished-at="2021-01-10T19:15:25 EET" duration-ms="4361" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SnapchatCheck status=SUCCESS method=HomePage.SnapchatCheck()[pri:8, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.SnapchatCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:15:25 EET" name="Setup" finished-at="2021-01-10T19:15:37 EET" duration-ms="12057" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.AboutUsCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="AboutUsCheck()[pri:9, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:15:37 EET" name="AboutUsCheck" finished-at="2021-01-10T19:15:38 EET" duration-ms="1908" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AboutUsCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:15:38 EET" name="Teardown" finished-at="2021-01-10T19:15:43 EET" duration-ms="4089" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AboutUsCheck status=SUCCESS method=HomePage.AboutUsCheck()[pri:9, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.AboutUsCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:15:43 EET" name="Setup" finished-at="2021-01-10T19:15:54 EET" duration-ms="11085" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.DirectoriesCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="DirectoriesCheck()[pri:10, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:15:54 EET" name="DirectoriesCheck" finished-at="2021-01-10T19:15:54 EET" duration-ms="434" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DirectoriesCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:15:54 EET" name="Teardown" finished-at="2021-01-10T19:16:00 EET" duration-ms="6382" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=DirectoriesCheck status=SUCCESS method=HomePage.DirectoriesCheck()[pri:10, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.DirectoriesCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:16:00 EET" name="Setup" finished-at="2021-01-10T19:16:18 EET" duration-ms="17848" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.ServicesCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="ServicesCheck()[pri:11, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:16:18 EET" name="ServicesCheck" finished-at="2021-01-10T19:16:19 EET" duration-ms="661" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ServicesCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:16:19 EET" name="Teardown" finished-at="2021-01-10T19:16:23 EET" duration-ms="4436" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ServicesCheck status=SUCCESS method=HomePage.ServicesCheck()[pri:11, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.ServicesCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:16:23 EET" name="Setup" finished-at="2021-01-10T19:16:34 EET" duration-ms="10628" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.BlogsNewsCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="BlogsNewsCheck()[pri:12, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:16:34 EET" name="BlogsNewsCheck" finished-at="2021-01-10T19:16:35 EET" duration-ms="466" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BlogsNewsCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:16:35 EET" name="Teardown" finished-at="2021-01-10T19:16:39 EET" duration-ms="4214" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=BlogsNewsCheck status=SUCCESS method=HomePage.BlogsNewsCheck()[pri:12, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.BlogsNewsCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:16:39 EET" name="Setup" finished-at="2021-01-10T19:16:52 EET" duration-ms="12975" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.MedicalTourisumCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="MedicalTourisumCheck()[pri:13, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:16:52 EET" name="MedicalTourisumCheck" finished-at="2021-01-10T19:16:52 EET" duration-ms="364" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MedicalTourisumCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:16:52 EET" name="Teardown" finished-at="2021-01-10T19:16:56 EET" duration-ms="4249" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MedicalTourisumCheck status=SUCCESS method=HomePage.MedicalTourisumCheck()[pri:13, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.MedicalTourisumCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:16:56 EET" name="Setup" finished-at="2021-01-10T19:17:08 EET" duration-ms="11754" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.MyCartCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="MyCartCheck()[pri:14, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:17:08 EET" name="MyCartCheck" finished-at="2021-01-10T19:17:10 EET" duration-ms="1822" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MyCartCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:17:10 EET" name="Teardown" finished-at="2021-01-10T19:17:14 EET" duration-ms="3850" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MyCartCheck status=SUCCESS method=HomePage.MyCartCheck()[pri:14, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.MyCartCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:17:14 EET" name="Setup" finished-at="2021-01-10T19:17:26 EET" duration-ms="11938" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.SearchCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="SearchCheck()[pri:15, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:17:26 EET" name="SearchCheck" finished-at="2021-01-10T19:17:30 EET" duration-ms="4127" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:17:30 EET" name="Teardown" finished-at="2021-01-10T19:17:34 EET" duration-ms="3669" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SearchCheck status=SUCCESS method=HomePage.SearchCheck()[pri:15, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.SearchCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:17:34 EET" name="Setup" finished-at="2021-01-10T19:17:45 EET" duration-ms="11792" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.ShopNowCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="ShopNowCheck()[pri:16, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:17:45 EET" name="ShopNowCheck" finished-at="2021-01-10T19:17:49 EET" duration-ms="3300" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ShopNowCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:17:49 EET" name="Teardown" finished-at="2021-01-10T19:17:52 EET" duration-ms="3355" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ShopNowCheck status=SUCCESS method=HomePage.ShopNowCheck()[pri:16, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.ShopNowCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:17:52 EET" name="Setup" finished-at="2021-01-10T19:18:07 EET" duration-ms="15122" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.HosptialCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="HosptialCheck()[pri:17, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:18:07 EET" name="HosptialCheck" finished-at="2021-01-10T19:18:10 EET" duration-ms="3017" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HosptialCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:18:10 EET" name="Teardown" finished-at="2021-01-10T19:18:15 EET" duration-ms="4418" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=HosptialCheck status=SUCCESS method=HomePage.HosptialCheck()[pri:17, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.HosptialCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:18:15 EET" name="Setup" finished-at="2021-01-10T19:18:28 EET" duration-ms="13251" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.VendorCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="VendorCheck()[pri:18, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:18:28 EET" name="VendorCheck" finished-at="2021-01-10T19:18:31 EET" duration-ms="3010" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VendorCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:18:31 EET" name="Teardown" finished-at="2021-01-10T19:18:35 EET" duration-ms="3798" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VendorCheck status=SUCCESS method=HomePage.VendorCheck()[pri:18, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.VendorCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:18:35 EET" name="Setup" finished-at="2021-01-10T19:18:48 EET" duration-ms="13581" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.OurMissionCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="OurMissionCheck()[pri:20, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:18:48 EET" name="OurMissionCheck" finished-at="2021-01-10T19:18:49 EET" duration-ms="717" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OurMissionCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:18:49 EET" name="Teardown" finished-at="2021-01-10T19:18:52 EET" duration-ms="3579" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=OurMissionCheck status=SUCCESS method=HomePage.OurMissionCheck()[pri:20, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.OurMissionCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:18:52 EET" name="Setup" finished-at="2021-01-10T19:19:13 EET" duration-ms="21004" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.OurVisionCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="OurVisionCheck()[pri:21, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:19:13 EET" name="OurVisionCheck" finished-at="2021-01-10T19:19:14 EET" duration-ms="607" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OurVisionCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:19:14 EET" name="Teardown" finished-at="2021-01-10T19:19:18 EET" duration-ms="3834" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=OurVisionCheck status=SUCCESS method=HomePage.OurVisionCheck()[pri:21, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.OurVisionCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:19:18 EET" name="Setup" finished-at="2021-01-10T19:19:31 EET" duration-ms="13414" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.OurValueCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="OurValueCheck()[pri:22, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:19:31 EET" name="OurValueCheck" finished-at="2021-01-10T19:19:32 EET" duration-ms="592" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OurValueCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:19:32 EET" name="Teardown" finished-at="2021-01-10T19:19:35 EET" duration-ms="3420" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=OurValueCheck status=SUCCESS method=HomePage.OurValueCheck()[pri:22, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.OurValueCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:19:35 EET" name="Setup" finished-at="2021-01-10T19:19:49 EET" duration-ms="13284" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.OurPartnersCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="OurPartnersCheck()[pri:23, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:19:49 EET" name="OurPartnersCheck" finished-at="2021-01-10T19:19:50 EET" duration-ms="1037" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OurPartnersCheck -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:19:50 EET" name="Teardown" finished-at="2021-01-10T19:19:53 EET" duration-ms="3396" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=OurPartnersCheck status=SUCCESS method=HomePage.OurPartnersCheck()[pri:23, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.OurPartnersCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Setup(java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:19:53 EET" name="Setup" finished-at="2021-01-10T19:20:03 EET" duration-ms="10143" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.SubscribNow()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="SubscribNow()[pri:24, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:20:03 EET" name="SubscribNow" finished-at="2021-01-10T19:20:06 EET" duration-ms="2394" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SubscribNow -->
-        <test-method is-config="true" signature="Teardown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:20:06 EET" name="Teardown" finished-at="2021-01-10T19:20:09 EET" duration-ms="3887" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SubscribNow status=SUCCESS method=HomePage.SubscribNow()[pri:24, instance:MedWebsite.HomePage@6ce139a4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void MedWebsite.HomePage.SubscribNow()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="Finished()[pri:0, instance:MedWebsite.HomePage@6ce139a4]" started-at="2021-01-10T19:20:10 EET" name="Finished" finished-at="2021-01-10T19:20:10 EET" duration-ms="587" status="PASS">
+        <test-method is-config="true" signature="Finished()[pri:0, instance:MedWebsite.HomePage@54c562f7]" started-at="2021-01-11T22:11:49 EET" name="Finished" finished-at="2021-01-11T22:11:50 EET" duration-ms="463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Finished -->

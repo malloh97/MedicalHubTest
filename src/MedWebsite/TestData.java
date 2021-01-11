@@ -5,10 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-
 import atu.testrecorder.ATUTestRecorder;
 import atu.testrecorder.exceptions.ATUTestRecorderException;
 
@@ -34,7 +32,6 @@ public class TestData {
 		System.out.println("Congrats, Testing is Finished");
 		extent.flush();
 	}
-	
 	public void beforetest(String name) throws ATUTestRecorderException
 	{
 		recorder = new ATUTestRecorder("D:\\Users\\ahmad\\eclipse-workspace\\Qiotic_Projects\\MedTestReport", name, false);
@@ -42,7 +39,7 @@ public class TestData {
 		test = extent.startTest(name);
 		ChromeOptions option = new ChromeOptions();
 		option.addArguments("--incognito");
-	    System.setProperty("webdriver.chrome.driver","C:\\Users\\ahmad\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\ahmad\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe");
 		driver = new ChromeDriver(option);
 		driver.get("https://medical.qiotic.info/en/index");
         driver.manage().window().maximize();
