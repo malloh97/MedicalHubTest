@@ -63,7 +63,7 @@ public class RegisterandLogIn extends TestData {
 		driver.quit();
 	}
 	
-	@Test(priority=1, enabled=false)
+	@Test(priority=1)
 	public void RegisterCheck()
 	{
 		Actions action = new Actions(driver);
@@ -83,7 +83,7 @@ public class RegisterandLogIn extends TestData {
 		driver.findElement(By.xpath("(//span[@class='button_text_container'])[2]")).click();
 	}
 	
-	@Test(priority=2, enabled=false)
+	@Test(priority=2)
 	public void LogInCheck()
 	{
 		driver.findElement(By.xpath("//a[text()='sign In/ register']")).click();
@@ -92,7 +92,7 @@ public class RegisterandLogIn extends TestData {
 		driver.findElement(By.xpath("//span[@class='button_text_container']")).click();
 	}
 	
-	@Test(priority=3, enabled=false)
+	@Test(priority=3)
 	public void PolicyCheck()
 	{
 		driver.findElement(By.xpath("//a[text()='sign In/ register']")).click();
@@ -102,7 +102,7 @@ public class RegisterandLogIn extends TestData {
 		Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=4, dataProvider= "MyData", enabled=false)
+	@Test(priority=4, dataProvider= "MyData")
 	public void loginDifferentCases(String username, String password)
 	{
 		driver.findElement(By.xpath("//a[text()='sign In/ register']")).click();
@@ -128,7 +128,7 @@ public class RegisterandLogIn extends TestData {
 		return data;
 	}
 	
-	@Test(priority=5, enabled=false)
+	@Test(priority=5)
 	public void ForgetpassCheck()
 	{
 		driver.findElement(By.xpath("//a[text()='sign In/ register']")).click();

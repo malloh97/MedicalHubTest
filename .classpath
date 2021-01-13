@@ -23,5 +23,20 @@
 	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/jar_files/mongodb-driver-core-3.0.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/jar_files/sqlite-jdbc-3.8.11.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/ATUTestRecorder_2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/Jar+Files/Jar Files/jar_files/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/Jar+Files/Jar Files/jar_files/commons-compress-1.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/Jar+Files/Jar Files/jar_files/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/Jar+Files/Jar Files/jar_files/httpclient-4.5.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/Jar+Files/Jar Files/jar_files/httpcore-4.4.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/Jar+Files/Jar Files/jar_files/jackson-annotations-2.9.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/Jar+Files/Jar Files/jar_files/jackson-core-2.9.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/Jar+Files/Jar Files/jar_files/jackson-databind-2.9.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/Jar+Files/Jar Files/jar_files/jsoup-1.11.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/Jar+Files/Jar Files/jar_files/jsr305-3.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/Jar+Files/Jar Files/jar_files/lombok-1.16.20.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/Jar+Files/Jar Files/jar_files/objenesis-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/Jar+Files/Jar Files/jar_files/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/Jar+Files/Jar Files/jar_files/webdriver-manager-0.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ahmad/Downloads/webdrivermanager-1.5.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

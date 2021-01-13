@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MedWebsite.HomePage">
+      <class name="MedWebsite.MyAccountPage">
         <methods>
-          <include name="Started"/>
           <include name="Teardown"/>
-          <include name="HelpPageAdvancedSearch"/>
           <include name="Finished"/>
+          <include name="Started"/>
           <include name="Setup"/>
+          <include name="LogOutCheck"/>
         </methods>
-      </class> <!-- MedWebsite.HomePage -->
+      </class> <!-- MedWebsite.MyAccountPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
