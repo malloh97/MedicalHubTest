@@ -1,5 +1,6 @@
 package MedWebsite;
 
+import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -42,12 +43,19 @@ public class TestData {
 		option.addArguments("--incognito");
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\ahmad\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe");
 		driver = new ChromeDriver(option);
-		driver.get("https://medical.qiotic.info/en/index");
+		driver.get("https://medical.qiotic.info/en");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
-	
+	public Double CopounDiscount(Double SupTotal)
+	{
+		Scanner input = new Scanner (System.in);
+		Double Total;
+		Double Copune = input.nextDouble();
+		Total = Copune * SupTotal;
+		return Total; 
+	}
 	
 	
 }
