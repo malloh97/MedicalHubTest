@@ -43,7 +43,7 @@ public class TestData {
 		option.addArguments("--incognito");
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\ahmad\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe");
 		driver = new ChromeDriver(option);
-		driver.get("https://medical.qiotic.info/en");
+		driver.get("https://medical-hub.com/en");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}

@@ -120,14 +120,5 @@ public class CheckOutPage extends TestData {
 		
 	}
 	
-	@Test 
-	public void ChattCheck()
-	{
-		
-		driver.findElement(By.id("maximizeChat")).click();
-		
-	}
-	
-	
 
 }
