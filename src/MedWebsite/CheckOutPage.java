@@ -67,7 +67,7 @@ public class CheckOutPage extends TestData {
 	
 	}
 	
-	@Test(enabled=false)
+	@Test()
 	public void CopounCheck()
 	{
 		driver.findElement(By.xpath("//a[text()='sign In/ register']")).click();
@@ -85,7 +85,7 @@ public class CheckOutPage extends TestData {
 		System.out.println(CopounDiscount(SupTotalamount));
 	}
 	
-	@Test(enabled=false) 
+	@Test() 
 	public void CheckOutCheck()
 	{
 		driver.findElement(By.xpath("//a[text()='sign In/ register']")).click();

@@ -25,26 +25,26 @@ import atu.testrecorder.exceptions.ATUTestRecorderException;
 
 public class HomePage extends TestData {
 	
-	@BeforeSuite
+	@BeforeSuite(groups={"fixed"})
 	public void Started()
 	{
 		started();
 	}
 	
-	@AfterSuite
+	@AfterSuite(groups={"fixed"})
 	public void Finished()
 	{
 		finished();
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(groups={"fixed"})
 	public void Setup(Method method) throws ATUTestRecorderException
 	{
 		beforetest(method.getName());
     }
 	
 
-	@AfterMethod
+	@AfterMethod(groups={"fixed"})
 	public void Teardown(ITestResult result, Method method ) throws ATUTestRecorderException, IOException
 	{
 		if (result.getStatus() == ITestResult.SUCCESS)
@@ -67,7 +67,7 @@ public class HomePage extends TestData {
 		driver.quit();
 	}
 	
-	@Test(priority=1, enabled=false)
+	@Test(priority=1)
 	public void LanguageButtonCheck()
 	{
 		driver.findElement(By.id("navbarDropdown")).click();
@@ -76,13 +76,13 @@ public class HomePage extends TestData {
 	}
 	
 	
-	@Test(priority=2, enabled=false)
+	@Test(priority=2)
 	public void PhoneNumberCheck()
 	{
 		driver.findElement(By.xpath("//span[text()='+962 797561465']")).click();
 	}
 	
-	@Test(priority=3, enabled=false)
+	@Test(priority=3)
 	public void ContuctCheck()
 	{
 		driver.findElement(By.xpath("//a[text()='Contact Us']")).click();
@@ -92,40 +92,40 @@ public class HomePage extends TestData {
 		driver.findElement(By.xpath("//span[@class='button_text_container']")).click();
 	}
 	
-	@Test(priority=4, enabled=false)
+	@Test(priority=4)
 	public void FacebookCheck()
 	{
 		driver.findElement(By.xpath("//i[contains(@class,'fa fa-facebook-f')]")).click();
 	}
 	
 
-	@Test(priority=5, enabled=false)
+	@Test(priority=5)
 	public void LinkedInCheck()
 	{
 		driver.findElement(By.xpath("//i[contains(@class,'fa fa-linkedin-in')]")).click();
 	}
 	
 
-	@Test(priority=6, enabled=false)
+	@Test(priority=6)
 	public void TwitterCheck()
 	{
 		driver.findElement(By.xpath("//i[contains(@class,'fa fa-twitter')]")).click();
 	}
 	
 
-	@Test(priority=7, enabled=false)
+	@Test(priority=7)
 	public void InstagrameCheck()
 	{
 		driver.findElement(By.xpath("//i[contains(@class,'fa fa-instagram')]")).click();
 	}
 	
-	@Test(priority=8, enabled=false)
+	@Test(priority=8)
 	public void SnapchatCheck()
 	{
 		driver.findElement(By.xpath("//i[contains(@class,'fa fa-snapchat-ghost')]")).click();
 	}
 	
-	@Test(priority=9, enabled=false)
+	@Test(priority=9)
 	public void AboutUsCheck()
 	{
 		WebElement about = driver.findElement(By.xpath("(//a[@class='nav-link'])[6]"));
@@ -135,7 +135,7 @@ public class HomePage extends TestData {
 		Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=10, enabled=false)
+	@Test(priority=10)
 	public void DirectoriesCheck()
 	{
 		WebElement about = driver.findElement(By.xpath("(//a[@class='nav-link'])[7]"));
@@ -143,7 +143,7 @@ public class HomePage extends TestData {
 		action.moveToElement(about).build().perform();
 	}
 	
-	@Test(priority=11, enabled=false)
+	@Test(priority=11)
 	public void ServicesCheck()
 	{
 		WebElement about = driver.findElement(By.xpath("(//a[@class='nav-link'])[8]"));
@@ -153,7 +153,7 @@ public class HomePage extends TestData {
 		Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=12, enabled=false)
+	@Test(priority=12)
 	public void BlogsNewsCheck()
 	{
 		WebElement about = driver.findElement(By.xpath("(//a[@class='nav-link'])[9]"));
@@ -162,7 +162,7 @@ public class HomePage extends TestData {
 	}
 	
 
-	@Test(priority=13, enabled=false)
+	@Test(priority=13)
 	public void MedicalTourisumCheck()
 	{
 		WebElement about = driver.findElement(By.xpath("(//a[@class='nav-link'])[10]"));
@@ -170,15 +170,23 @@ public class HomePage extends TestData {
 		action.moveToElement(about).build().perform();
 	}
 	
-	@Test(priority=14, enabled=false)
+	@Test(priority=14)
 	public void MyCartCheck()
 	{
+		driver.findElement(By.xpath("//a[contains(@class,'nav-link shop-now-btn')]")).click();
+		driver.findElement(By.xpath("//h3[text()='Diabetic Care']")).click();
+		driver.findElement(By.xpath("(//i[contains(@class,'fa fa-shopping-cart')])[2]")).click();
+		driver.findElement(By.xpath("(//i[contains(@class,'fa fa-shopping-cart')])[3]")).click();
+		WebElement scrolldown = driver.findElement(By.xpath("//h3[text()='Diabetic Care']"));
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+    	js.executeScript("arguments[0].scrollIntoView(true);", scrolldown);
+		
 		driver.findElement(By.id("cart")).click();
 		boolean Actual = driver.findElement(By.xpath("//a[text()='Your cart']")).isDisplayed();
 		Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=15, enabled=false)
+	@Test(priority=15)
 	public void SearchCheck()
 	{
 		driver.findElement(By.id("search-popup")).click();
@@ -187,31 +195,33 @@ public class HomePage extends TestData {
 	}
 	
 
-	@Test(priority=16, enabled=false)
+	@Test(priority=16)
 	public void ShopNowCheck()
 	{
     	driver.findElement(By.xpath("//span[@class='button_text_container']")).click();
-    	boolean Actual = driver.findElement(By.xpath("//span[text()='Category']")).isDisplayed();
+    	boolean Actual = driver.findElement(By.xpath("//h1[text()='Start-ups and solutions']")).isDisplayed();
     	Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=17, enabled=false)
+	@Test(priority=17, groups= {"fixed"})
 	public void HosptialCheck()
 	{
     	driver.findElement(By.xpath("(//span[@class='button_text_container'])[2]")).click();
-    	boolean Actual = driver.findElement(By.xpath("//h2[text()='Hospital']")).isDisplayed();
-    	Assert.assertTrue(Actual);
+    	String Actual = driver.getCurrentUrl();
+    	String Expected = "https://medical-hub.com/en/hospital/login";
+    	Assert.assertEquals(Actual, Expected);
 	}
 	
-	@Test(priority=18, enabled=false)
+	@Test(priority=18, groups= {"fixed"})
 	public void VendorCheck()
 	{
     	driver.findElement(By.xpath("(//span[@class='button_text_container'])[3]")).click();
-    	boolean Actual = driver.findElement(By.xpath("//h2[text()='Vendor']")).isDisplayed();
-    	Assert.assertTrue(Actual);
+    	String Actual = driver.getCurrentUrl();
+    	String Expecetd = "https://medical-hub.com/en/merchant/login";
+    	Assert.assertEquals(Actual, Expecetd);
 	}
 	
-	@Test(priority=19, enabled=false)
+	@Test(priority=19)
 	public void ConsultancyCheck()
 	{
     	driver.findElement(By.xpath("(//span[@class='button_text_container'])[4]")).click();
@@ -219,7 +229,7 @@ public class HomePage extends TestData {
     	Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=20, enabled=false)
+	@Test(priority=20)
 	public void OurMissionCheck()
 	{
 		Actions action = new Actions(driver);
@@ -230,7 +240,7 @@ public class HomePage extends TestData {
 	}
 	
 
-	@Test(priority=21, enabled=false)
+	@Test(priority=21)
 	public void OurVisionCheck()
 	{
 		Actions action = new Actions(driver);
@@ -240,7 +250,7 @@ public class HomePage extends TestData {
     	action.moveToElement(ourmission).build().perform();
 	}
 	
-	@Test(priority=22, enabled=false)
+	@Test(priority=22)
 	public void OurValueCheck()
 	{
 		Actions action = new Actions(driver);
@@ -250,69 +260,59 @@ public class HomePage extends TestData {
     	action.moveToElement(ourmission).build().perform();
 	}
 	
-	@Test(priority=23, enabled=false)
-	public void OurPartnersCheck()
+	@Test(priority=23, groups= {"fixed"})
+	public void LatestNews()
 	{
-        WebElement pic = driver.findElement(By.xpath("//img[@src='https://medical.qiotic.info/website/images/partners/Logo-Hospital.png']"));
-    	Actions action = new Actions(driver);
-    	action.moveToElement(pic).click().build().perform();
+		WebElement scrolldown = driver.findElement(By.xpath("//span[text()='News']"));
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+    	js.executeScript("arguments[0].scrollIntoView(true);", scrolldown);
+    	driver.findElement(By.xpath("(//span[@class='button_text_container'])[5]")).click();
 	}
 	
-	@Test(priority=24, enabled=false)
+	@Test(priority=24)
 	public void SubscribNow()
 	{
 		driver.findElement(By.xpath("//input[@type='email']")).sendKeys("ahmadmalloh97@gmail.com");
 		driver.findElement(By.xpath("//i[contains(@class,'fa fa-long-arrow-right')]")).click();
 	}
 	
-	@Test(priority=25, enabled=false)
+	@Test(priority=25)
 	public void ConnectWithUsTwitter() 
 	{
 		WebElement scrolldown = driver.findElement(By.xpath("//h2[text()='Payment Method']"));
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
     	js.executeScript("arguments[0].scrollIntoView(true);", scrolldown);
-		driver.findElement(By.xpath("//img[@src='https://medical.qiotic.info/website/images/footer/social/twitter.svg']")).click();
+		driver.findElement(By.xpath("//div[contains(@class,'social twitter')]")).click();
 	}
 	
-	@Test(priority=26, enabled=false)
+	@Test(priority=26)
 	public void ConnectWithUsFacebook() 
 	{
 		WebElement scrolldown = driver.findElement(By.xpath("//h2[text()='Payment Method']"));
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
     	js.executeScript("arguments[0].scrollIntoView(true);", scrolldown);
-		driver.findElement(By.xpath("//img[@src='https://medical.qiotic.info/website/images/footer/social/facebook.svg']")).click();
+		driver.findElement(By.xpath("//div[contains(@class,'social facebook')]")).click();
 	}
 
-	@Test(priority=27, enabled=false)
+	@Test(priority=27)
 	public void ConnectWithUsGoogle() 
 	{
 		WebElement scrolldown = driver.findElement(By.xpath("//h2[text()='Payment Method']"));
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
     	js.executeScript("arguments[0].scrollIntoView(true);", scrolldown);
-		driver.findElement(By.xpath("//img[@src='https://medical.qiotic.info/website/images/footer/social/google-plus.svg']")).click();
+		driver.findElement(By.xpath("//div[contains(@class,'social google')]")).click();
 	}
 	
-	@Test(priority=28, enabled=false)
+	@Test(priority=28)
 	public void ConnectWithUsLinkedIn() 
 	{
 		WebElement scrolldown = driver.findElement(By.xpath("//h2[text()='Payment Method']"));
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
     	js.executeScript("arguments[0].scrollIntoView(true);", scrolldown);
-		driver.findElement(By.xpath("//img[@src='https://medical.qiotic.info/website/images/footer/social/linkedin.svg']")).click();
+		driver.findElement(By.xpath("//div[contains(@class,'social linkedin')]")).click();
 	}
-	
-	@Test(priority=29, enabled=false)
-	public void HelpPageCheck()
-	{
-		WebElement scrolldown = driver.findElement(By.xpath("//h2[text()='Payment Method']"));
-		JavascriptExecutor js = ((JavascriptExecutor) driver);
-    	js.executeScript("arguments[0].scrollIntoView(true);", scrolldown);
-		driver.findElement(By.xpath("//a[text()='Help']")).click();
-		boolean Actual = driver.findElement(By.xpath("//li[text()='Help']")).isDisplayed();
-		Assert.assertTrue(Actual);
-	}
-	
-	@Test(priority=30, enabled=false)
+
+	@Test(priority=30)
 	public void HelpPageInformation()
 	{
 		WebElement scrolldown = driver.findElement(By.xpath("//h2[text()='Payment Method']"));
@@ -323,18 +323,18 @@ public class HomePage extends TestData {
 		Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=31, enabled=false)
+	@Test(priority=31)
 	public void HelpPagePrivacyPolicy()
 	{
 		WebElement scrolldown = driver.findElement(By.xpath("//h2[text()='Payment Method']"));
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
     	js.executeScript("arguments[0].scrollIntoView(true);", scrolldown);
 		driver.findElement(By.xpath("//a[text()='Privacy Policy']")).click();
-		boolean Actual = driver.findElement(By.xpath("//li[text()='Privacy Ploicy']")).isDisplayed();
+		boolean Actual = driver.findElement(By.xpath("//h1[text()='Privacy Policy']")).isDisplayed();
 		Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=32, enabled=false)
+	@Test(priority=32)
 	public void HelpPageShippingDetails()
 	{
 		WebElement scrolldown = driver.findElement(By.xpath("//h2[text()='Payment Method']"));
@@ -345,7 +345,7 @@ public class HomePage extends TestData {
 		Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=33, enabled=false)
+	@Test(priority=33)
 	public void HelpPageAboutUs()
 	{
 		WebElement scrolldown = driver.findElement(By.xpath("//h2[text()='Payment Method']"));
@@ -356,7 +356,7 @@ public class HomePage extends TestData {
 		Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=34, enabled=false)
+	@Test(priority=34)
 	public void HelpPageCareers()
 	{
 		WebElement scrolldown = driver.findElement(By.xpath("//h2[text()='Payment Method']"));
@@ -367,7 +367,7 @@ public class HomePage extends TestData {
 		Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=35, enabled=false)
+	@Test(priority=35)
 	public void HelpPageRefundsReturns()
 	{
 		WebElement scrolldown = driver.findElement(By.xpath("//h2[text()='Payment Method']"));
@@ -378,7 +378,7 @@ public class HomePage extends TestData {
 		Assert.assertTrue(Actual);
 	}
 	
-	@Test(priority=36, enabled=false)
+	@Test(priority=36)
 	public void HelpPageDeliveries()
 	{
 		WebElement scrolldown = driver.findElement(By.xpath("//h2[text()='Payment Method']"));
@@ -396,7 +396,7 @@ public class HomePage extends TestData {
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
     	js.executeScript("arguments[0].scrollIntoView(true);", scrolldown);
 		driver.findElement(By.xpath("//a[text()='Advanced Search']")).click();
-		boolean Actual = driver.findElement(By.xpath("//li[text()='Advanced Search']")).isDisplayed();
+		boolean Actual = driver.findElement(By.xpath("//h3[text()='Shop by Category']")).isDisplayed();
 		Assert.assertTrue(Actual);
 	}
 	
