@@ -3,6 +3,10 @@ package MedWebsite;
 import java.lang.reflect.Method;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -59,10 +63,23 @@ public class DirectoriesPage extends TestData {
 	@Test(priority=1)
 	public void HospitalChecked()
 	{
-		//driver.findElement(By.xpath("//span[text()=' English ']")).click();
-		driver.findElement(By.linkText("Directories")).click();
-		driver.findElement(By.xpath("//h5[text()='Hospital']")).click();
-		driver.findElement(By.xpath("//a[text()='2']")).click();
+		Actions action = new Actions(driver);
+		WebElement Move = driver.findElement(By.xpath("//a[text()='Directories']"));
+		action.moveToElement(Move).build().perform();
+		driver.findElement(By.xpath("//a[text()='Hospital']")).click();
+		
+		WebElement moveto = driver.findElement(By.xpath("//ul[contains(@class,'pagination justify-content-center')]"));
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("arguments[0].scrollIntoView(true);", moveto);
+		driver.findElement(By.xpath("(//a[@class='page-link'])[6]")).click();
+		driver.findElement(By.xpath("(//div[@class='card'])[9]")).click();
+		driver.findElement(By.xpath("//a[text()='Doctors']")).click();
+		WebElement Doctor = driver.findElement(By.xpath("//a[text()='Doctors']"));
+		js.executeScript("arguments[0].scrollIntoView(true);", Doctor);
+		
+		boolean Actual = driver.findElement(By.xpath("//h5[text()='Dr. Yazan Haliqa']")).isDisplayed();
+		Assert.assertTrue(Actual);
+		
 	}
 
 }

@@ -199,8 +199,9 @@ public class HomePage extends TestData {
 	public void ShopNowCheck()
 	{
     	driver.findElement(By.xpath("//span[@class='button_text_container']")).click();
-    	boolean Actual = driver.findElement(By.xpath("//h1[text()='Start-ups and solutions']")).isDisplayed();
-    	Assert.assertTrue(Actual);
+    	String Actual = driver.getCurrentUrl();
+    	String Expected = "https://medical-hub.com/en/shop-now";
+    	Assert.assertEquals(Actual, Expected);
 	}
 	
 	@Test(priority=17, groups= {"fixed"})
